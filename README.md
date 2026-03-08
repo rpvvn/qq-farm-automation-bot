@@ -91,25 +91,9 @@ pnpm dev:core
 ```
 
 ### Linux（Ubuntu/Debian）
+建议使用宝塔最为便捷，在网站其他项目选项中按照如图所示去部署即可
 
-```bash
-# 1. 安装 Node.js 20+
-sudo apt update && sudo apt install -y curl
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-sudo apt install -y nodejs
-corepack enable
-
-# 2. 安装依赖并构建前端
-cd /path/to/qq-farm-bot-ui
-pnpm install
-pnpm build:web
-
-# 3. 启动
-pnpm dev:core
-
-# （可选）设置管理密码后启动
-ADMIN_PASSWORD='你的强密码' pnpm dev:core
-```
+<img src="https://picui.ogmua.cn/s1/2026/03/08/69ad661353590.webp"  alt="图片失效"/>
 
 启动后访问面板：
 - 本机：`http://localhost:3007`
@@ -118,7 +102,7 @@ ADMIN_PASSWORD='你的强密码' pnpm dev:core
 ---
 
 ## Docker 部署
-- 目前不支持
+- 目前不支持，等待我后续更新
 ## 二进制发布版（无需 Node.js）
 
 ### 构建
