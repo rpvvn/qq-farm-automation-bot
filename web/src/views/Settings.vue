@@ -3,6 +3,7 @@ import { storeToRefs } from 'pinia'
 import { computed, onMounted, ref, watch, watchEffect } from 'vue'
 import api from '@/api'
 import ConfirmModal from '@/components/ConfirmModal.vue'
+import ConnectionConfig from '@/components/ConnectionConfig.vue'
 import BaseButton from '@/components/ui/BaseButton.vue'
 import BaseInput from '@/components/ui/BaseInput.vue'
 import BaseSelect from '@/components/ui/BaseSelect.vue'
@@ -1157,6 +1158,17 @@ async function handleTestOffline() {
           >
             保存下线提醒设置
           </BaseButton>
+        </div>
+
+        <div class="border-b border-t bg-gray-50/50 px-4 py-3 dark:border-gray-700 dark:bg-gray-800/50">
+          <h3 class="flex items-center gap-2 text-base text-gray-900 font-bold dark:text-gray-100">
+            <div class="i-carbon-network-3" />
+            运行连接配置
+          </h3>
+        </div>
+
+        <div class="flex-1 p-4">
+          <ConnectionConfig @alert="showAlert" />
         </div>
       </div>
     </div>

@@ -14,8 +14,10 @@ function createReloginReminderService(options) {
 
     const reloginWatchers = new Map(); // key: accountId:loginCode
 
-    function getOfflineAutoDeleteMs(username = '') {
-        const cfg = store.getOfflineReminder ? store.getOfflineReminder(username) : null;
+    function getOfflineAutoDeleteMs(accountId, username = '') {
+        const cfg = store.getEffectiveOfflineReminder 
+            ? store.getEffectiveOfflineReminder(accountId, username)
+            : null;
         const sec = Math.max(0, Number.parseInt(cfg && cfg.offlineDeleteSec, 10) || 0);
         if (sec === 0) return Infinity;
         return sec * 1000;
@@ -156,15 +158,18 @@ function createReloginReminderService(options) {
                 log('错误', `查找账号用户名失败: ${e.message}`);
             }
 
-            const cfg = store.getOfflineReminder ? store.getOfflineReminder(username) : null;
+            const cfg = store.getEffectiveOfflineReminder 
+                ? store.getEffectiveOfflineReminder(accountId, username)
+                : null;
             if (!cfg) {
-                log('错误', `未找到下线提醒配置: 用户=${username || '(空)'}`);
+                log('错误', `未找到下线提醒配置: 账号=${accountId}, 用户=${username || '(空)'}`);
                 return;
             }
 
             log('系统', `下线提醒配置: 渠道=${cfg.channel}, 标题=${cfg.title}`, {
                 channel: cfg.channel,
                 title: cfg.title,
+                accountId,
                 username,
             });
 

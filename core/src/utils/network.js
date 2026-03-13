@@ -14,13 +14,51 @@ const { types } = require('./proto');
 const { toLong, toNum, syncServerTime, log, logWarn } = require('./utils');
 const cryptoWasm = require('./crypto-wasm');
 
-// 延迟加载 warehouse 模块避免循环依赖
+// 延迟加载模块避免循环依赖
 let warehouseModule = null;
 function getWarehouseModule() {
     if (!warehouseModule) {
         warehouseModule = require('../services/warehouse');
     }
     return warehouseModule;
+}
+
+let storeModule = null;
+function getStoreModule() {
+    if (!storeModule) {
+        storeModule = require('../models/store');
+    }
+    return storeModule;
+}
+
+// 获取有效的连接配置（优先使用用户配置，否则使用默认配置）
+function getEffectiveConnectionConfig() {
+    try {
+        const store = getStoreModule();
+        const customConfig = store.getConnectionConfig();
+        return {
+            serverUrl: customConfig.serverUrl || CONFIG.serverUrl,
+            clientVersion: customConfig.clientVersion || CONFIG.clientVersion,
+            platform: customConfig.platform || CONFIG.platform,
+            os: customConfig.os || CONFIG.os,
+            sysSoftware: customConfig.sysSoftware || 'iOS 26.2.1',
+            network: customConfig.network || 'wifi',
+            memory: customConfig.memory || '7672',
+            deviceId: customConfig.deviceId || 'iPhone X<iPhone18,3>',
+        };
+    } catch (e) {
+        // 如果获取失败，使用默认配置
+        return {
+            serverUrl: CONFIG.serverUrl,
+            clientVersion: CONFIG.clientVersion,
+            platform: CONFIG.platform,
+            os: CONFIG.os,
+            sysSoftware: 'iOS 26.2.1',
+            network: 'wifi',
+            memory: '7672',
+            deviceId: 'iPhone X<iPhone18,3>',
+        };
+    }
 }
 
 // ============ 事件发射器 (用于推送通知) ============
@@ -395,15 +433,16 @@ function handleNotify(msg) {
 
 // ============ 登录 ============
 async function sendLogin(onLoginSuccess) {
+    const connConfig = getEffectiveConnectionConfig();
     const body = types.LoginRequest.encode(types.LoginRequest.create({
         sharer_id: toLong(0),
         sharer_open_id: '',
         device_info: {
-            client_version: CONFIG.clientVersion,
-            sys_software: 'iOS 26.2.1',
-            network: 'wifi',
-            memory: '7672',
-            device_id: 'iPhone X<iPhone18,3>',
+            client_version: connConfig.clientVersion,
+            sys_software: connConfig.sysSoftware,
+            network: connConfig.network,
+            memory: connConfig.memory,
+            device_id: connConfig.deviceId,
         },
         share_cfg_id: toLong(0),
         scene_id: '1256',
@@ -502,9 +541,10 @@ function startHeartbeat() {
             }
         }
 
+        const connConfig = getEffectiveConnectionConfig();
         const body = types.HeartbeatRequest.encode(types.HeartbeatRequest.create({
             gid: toLong(userState.gid),
-            client_version: CONFIG.clientVersion,
+            client_version: connConfig.clientVersion,
         })).finish();
         sendMsgAsync('gamepb.userpb.UserService', 'Heartbeat', body).then(({ body: replyBody }) => {
             lastHeartbeatResponse = Date.now();
@@ -524,7 +564,8 @@ let savedCode = null;
 function connect(code, onLoginSuccess) {
     savedLoginCallback = onLoginSuccess;
     if (code) savedCode = code;
-    const url = `${CONFIG.serverUrl}?platform=${CONFIG.platform}&os=${CONFIG.os}&ver=${CONFIG.clientVersion}&code=${savedCode}&openID=`;
+    const connConfig = getEffectiveConnectionConfig();
+    const url = `${connConfig.serverUrl}?platform=${connConfig.platform}&os=${connConfig.os}&ver=${connConfig.clientVersion}&code=${savedCode}&openID=`;
 
     ws = new WebSocket(url, {
         headers: {

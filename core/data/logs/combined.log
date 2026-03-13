@@ -1,0 +1,562 @@
+{"app":"qq-farm-bot","level":"info","message":"未发现账号，请访问管理面板添加账号","module":"runtime","tag":"系统","timestamp":"2026-03-13T20:41:34.859Z"}
+{"app":"qq-farm-bot","level":"info","message":"admin panel started","module":"admin","port":3007,"timestamp":"2026-03-13T20:41:34.864Z","url":"http://localhost:3007"}
+{"accountId":"1","accountName":"3473400","app":"qq-farm-bot","level":"info","message":"正在启动账号: 3473400","module":"runtime","tag":"系统","timestamp":"2026-03-13T20:43:23.013Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在加载 Protobuf 定义...","module":"system","tag":"系统","timestamp":"2026-03-13T20:43:23.175Z"}
+{"app":"qq-farm-bot","level":"warn","message":"获取商店失败: Cannot read properties of undefined (reading 'encode')，使用本地备选列表","module":"warehouse","tag":"仓库","timestamp":"2026-03-13T20:43:23.180Z"}
+{"app":"qq-farm-bot","level":"info","message":"Protobuf 定义加载完成","module":"system","tag":"系统","timestamp":"2026-03-13T20:43:23.199Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在连接服务器...","module":"system","tag":"系统","timestamp":"2026-03-13T20:43:23.199Z"}
+{"app":"qq-farm-bot","level":"info","message":"登录成功: Vullfin (Lv56)","module":"system","tag":"系统","timestamp":"2026-03-13T20:43:23.560Z"}
+{"app":"qq-farm-bot","level":"info","message":"金豆豆数量: 204","module":"system","tag":"系统","timestamp":"2026-03-13T20:43:23.614Z"}
+{"app":"qq-farm-bot","level":"info","message":"当前为 QQ 环境，跳过邀请码处理（仅微信支持）","module":"system","tag":"系统","timestamp":"2026-03-13T20:43:23.616Z"}
+{"accountId":"1","accountName":"3473400","app":"qq-farm-bot","level":"info","message":"已同步账号昵称: None -> Vullfin","module":"runtime","tag":"系统","timestamp":"2026-03-13T20:43:23.620Z"}
+{"app":"qq-farm-bot","event":"email_rewards","level":"info","message":"今日暂无可领取邮箱奖励","module":"task","result":"none","tag":"任务","timestamp":"2026-03-13T20:43:23.659Z"}
+{"app":"qq-farm-bot","count":0,"event":"daily_share","level":"info","message":"领取成功","module":"task","result":"ok","tag":"任务","timestamp":"2026-03-13T20:43:23.776Z"}
+{"app":"qq-farm-bot","event":"month_card_gift","level":"info","message":"今日暂无可领取月卡礼包","module":"task","result":"none","tag":"任务","timestamp":"2026-03-13T20:43:23.815Z"}
+{"app":"qq-farm-bot","count":1,"event":"mall_free_gifts","level":"info","message":"自动购买免费礼包 x1","module":"task","result":"ok","tag":"任务","timestamp":"2026-03-13T20:43:23.894Z"}
+{"app":"qq-farm-bot","event":"vip_daily_gift","level":"info","message":"今日暂无可领取会员礼包","module":"task","result":"none","tag":"任务","timestamp":"2026-03-13T20:43:23.932Z"}
+{"app":"qq-farm-bot","count":24,"event":"收获作物","landIds":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],"level":"info","message":"收获完成 24 块土地","module":"farm","result":"ok","tag":"农场","timestamp":"2026-03-13T20:43:29.709Z"}
+{"app":"qq-farm-bot","count":24,"event":"铲除植物","level":"info","message":"已铲除 24 块 (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24)","module":"farm","result":"ok","tag":"农场","timestamp":"2026-03-13T20:43:29.749Z"}
+{"app":"qq-farm-bot","event":"选择种子","level":"info","message":"最佳种子: 茉莉花 (20128) 价格=1728金币 生长4小时","module":"warehouse","price":1728,"seedId":20128,"tag":"仓库","timestamp":"2026-03-13T20:43:29.792Z"}
+{"app":"qq-farm-bot","cost":41472,"count":24,"event":"购买种子","level":"info","message":"已购买 茉莉花种子 x24, 花费 41472 金币","module":"warehouse","result":"ok","seedId":20128,"tag":"仓库","timestamp":"2026-03-13T20:43:29.831Z"}
+{"app":"qq-farm-bot","count":24,"event":"种植种子","level":"info","message":"已在 24 块地种植 (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24)","module":"farm","occupiedCount":24,"result":"ok","seedId":20128,"tag":"农场","timestamp":"2026-03-13T20:43:32.083Z"}
+{"actions":["收获24","种植24"],"app":"qq-farm-bot","event":"农场循环","level":"info","message":"[收:24 长:0] → 收获24/种植24","module":"farm","opType":"all","tag":"农场","timestamp":"2026-03-13T20:43:32.278Z"}
+{"app":"qq-farm-bot","count":4,"event":"扫描任务","level":"info","message":"发现 4 个可领取任务","module":"task","result":"ok","tag":"任务","timestamp":"2026-03-13T20:43:32.318Z"}
+{"app":"qq-farm-bot","count":2,"event":"扫描任务","level":"info","message":"每日任务可领取: 每日登录游戏，采摘1次果实","module":"task","result":"ok","scope":"daily","tag":"任务","timestamp":"2026-03-13T20:43:32.318Z"}
+{"app":"qq-farm-bot","event":"领取任务","level":"info","message":"领取(每日任务): 每日登录游戏 → 点券50","module":"task","result":"ok","shared":false,"tag":"任务","taskId":200001,"timestamp":"2026-03-13T20:43:32.357Z"}
+{"app":"qq-farm-bot","event":"领取任务","level":"info","message":"领取(每日任务): 采摘1次果实 → 点券50","module":"task","result":"ok","shared":false,"tag":"任务","taskId":200002,"timestamp":"2026-03-13T20:43:32.702Z"}
+{"addedFromVisitors":33,"app":"qq-farm-bot","event":"visitor_gid_sync","level":"info","message":"已从最近访客自动补充 33 个 GID，当前已知好友 GID 共 33 个","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:34.259Z","totalKnownGids":33}
+{"app":"qq-farm-bot","count":18,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 18 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:34.303Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"清风明月","index":1,"level":"info","message":"批量帮助第 1/18 个好友: 清风明月","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:34.303Z","total":18}
+{"actions":["草10","虫12","水13"],"app":"qq-farm-bot","event":"help_friend","friendGid":1007244519,"friendName":"清风明月","level":"info","message":"清风明月: 草10/虫12/水13","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:35.226Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"清风明月","index":1,"level":"info","message":"批量帮助第 1 个好友完成: 清风明月","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:35.264Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"白开水","index":2,"level":"info","message":"批量帮助第 2/18 个好友: 白开水","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:35.475Z","total":18}
+{"actions":["草7","虫1","水6"],"app":"qq-farm-bot","event":"help_friend","friendGid":1015403554,"friendName":"白开水","level":"info","message":"白开水: 草7/虫1/水6","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:36.389Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"白开水","index":2,"level":"info","message":"批量帮助第 2 个好友完成: 白开水","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:36.427Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"大科","index":3,"level":"info","message":"批量帮助第 3/18 个好友: 大科","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:36.640Z","total":18}
+{"actions":["草9","虫2","水3"],"app":"qq-farm-bot","event":"help_friend","friendGid":1013346103,"friendName":"大科","level":"info","message":"大科: 草9/虫2/水3","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:37.573Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"大科","index":3,"level":"info","message":"批量帮助第 3 个好友完成: 大科","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:37.610Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"星空&月光","index":4,"level":"info","message":"批量帮助第 4/18 个好友: 星空&月光","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:37.821Z","total":18}
+{"actions":["草3","虫3","水3"],"app":"qq-farm-bot","event":"help_friend","friendGid":1131477698,"friendName":"星空&月光","level":"info","message":"星空&月光: 草3/虫3/水3","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:38.758Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"星空&月光","index":4,"level":"info","message":"批量帮助第 4 个好友完成: 星空&月光","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:38.796Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"Sakura","index":5,"level":"info","message":"批量帮助第 5/18 个好友: Sakura","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:39.008Z","total":18}
+{"actions":["草2","虫2","水4"],"app":"qq-farm-bot","event":"help_friend","friendGid":1185801524,"friendName":"Sakura","level":"info","message":"Sakura: 草2/虫2/水4","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:39.944Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"Sakura","index":5,"level":"info","message":"批量帮助第 5 个好友完成: Sakura","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:39.981Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"冬梅","index":6,"level":"info","message":"批量帮助第 6/18 个好友: 冬梅","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:40.194Z","total":18}
+{"actions":["虫4","水2"],"app":"qq-farm-bot","event":"help_friend","friendGid":1063838584,"friendName":"冬梅","level":"info","message":"冬梅: 虫4/水2","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:40.819Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"冬梅","index":6,"level":"info","message":"批量帮助第 6 个好友完成: 冬梅","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:40.857Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"Liu","index":7,"level":"info","message":"批量帮助第 7/18 个好友: Liu","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:41.071Z","total":18}
+{"actions":["草1","虫1","水4"],"app":"qq-farm-bot","event":"help_friend","friendGid":1015439887,"friendName":"Liu","level":"info","message":"Liu: 草1/虫1/水4","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:41.989Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"Liu","index":7,"level":"info","message":"批量帮助第 7 个好友完成: Liu","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:42.027Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"rabbit","index":8,"level":"info","message":"批量帮助第 8/18 个好友: rabbit","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:42.240Z","total":18}
+{"actions":["草4","虫2"],"app":"qq-farm-bot","event":"help_friend","friendGid":1008102044,"friendName":"rabbit","level":"info","message":"rabbit: 草4/虫2","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:42.869Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"rabbit","index":8,"level":"info","message":"批量帮助第 8 个好友完成: rabbit","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:42.907Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"ℒᎭℯ⃝赶路人","index":9,"level":"info","message":"批量帮助第 9/18 个好友: ℒᎭℯ⃝赶路人","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:43.115Z","total":18}
+{"actions":["草1","虫1","水1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1029907707,"friendName":"ℒᎭℯ⃝赶路人","level":"info","message":"ℒᎭℯ⃝赶路人: 草1/虫1/水1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:44.051Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"ℒᎭℯ⃝赶路人","index":9,"level":"info","message":"批量帮助第 9 个好友完成: ℒᎭℯ⃝赶路人","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:44.089Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"轻","index":10,"level":"info","message":"批量帮助第 10/18 个好友: 轻","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:44.300Z","total":18}
+{"actions":["草2"],"app":"qq-farm-bot","event":"help_friend","friendGid":1015998110,"friendName":"轻","level":"info","message":"轻: 草2","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:44.644Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"轻","index":10,"level":"info","message":"批量帮助第 10 个好友完成: 轻","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:44.682Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":",","index":11,"level":"info","message":"批量帮助第 11/18 个好友: ,","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:44.895Z","total":18}
+{"actions":["草2"],"app":"qq-farm-bot","event":"help_friend","friendGid":1072363939,"friendName":",","level":"info","message":",: 草2","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:45.240Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":",","index":11,"level":"info","message":"批量帮助第 11 个好友完成: ,","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:45.278Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"忘柯","index":12,"level":"info","message":"批量帮助第 12/18 个好友: 忘柯","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:45.489Z","total":18}
+{"actions":["虫1","水1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1058183740,"friendName":"忘柯","level":"info","message":"忘柯: 虫1/水1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:46.112Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"忘柯","index":12,"level":"info","message":"批量帮助第 12 个好友完成: 忘柯","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:46.149Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"︶ㄣ沉浮于世的微尘╮","index":13,"level":"info","message":"批量帮助第 13/18 个好友: ︶ㄣ沉浮于世的微尘╮","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:46.361Z","total":18}
+{"actions":["草1","水1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1037578020,"friendName":"︶ㄣ沉浮于世的微尘╮","level":"info","message":"︶ㄣ沉浮于世的微尘╮: 草1/水1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:46.977Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"︶ㄣ沉浮于世的微尘╮","index":13,"level":"info","message":"批量帮助第 13 个好友完成: ︶ㄣ沉浮于世的微尘╮","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:47.015Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"慕秋","index":14,"level":"info","message":"批量帮助第 14/18 个好友: 慕秋","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:47.216Z","total":18}
+{"actions":["虫1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1176430312,"friendName":"慕秋","level":"info","message":"慕秋: 虫1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:47.547Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"慕秋","index":14,"level":"info","message":"批量帮助第 14 个好友完成: 慕秋","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:47.585Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"芒果","index":15,"level":"info","message":"批量帮助第 15/18 个好友: 芒果","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:47.795Z","total":18}
+{"actions":["草1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1174292138,"friendName":"芒果","level":"info","message":"芒果: 草1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:48.141Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"芒果","index":15,"level":"info","message":"批量帮助第 15 个好友完成: 芒果","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:48.178Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"蒙面偷菜的好友","index":16,"level":"info","message":"批量帮助第 16/18 个好友: 蒙面偷菜的好友","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:48.390Z","total":18}
+{"actions":["草1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1007612222,"friendName":"蒙面偷菜的好友","level":"info","message":"蒙面偷菜的好友: 草1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:48.720Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"蒙面偷菜的好友","index":16,"level":"info","message":"批量帮助第 16 个好友完成: 蒙面偷菜的好友","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:48.758Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"辞安.","index":17,"level":"info","message":"批量帮助第 17/18 个好友: 辞安.","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:48.971Z","total":18}
+{"actions":["草1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1030896537,"friendName":"辞安.","level":"info","message":"辞安.: 草1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:49.297Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"辞安.","index":17,"level":"info","message":"批量帮助第 17 个好友完成: 辞安.","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:49.335Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"椒盐排骨","index":18,"level":"info","message":"批量帮助第 18/18 个好友: 椒盐排骨","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:49.535Z","total":18}
+{"actions":["草1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1003911965,"friendName":"椒盐排骨","level":"info","message":"椒盐排骨: 草1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:49.878Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"椒盐排骨","index":18,"level":"info","message":"批量帮助第 18 个好友完成: 椒盐排骨","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:49.915Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:43:50.129Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除草46/除虫30/浇水38","module":"friend","result":"ok","summary":["除草46","除虫30","浇水38"],"tag":"好友","timestamp":"2026-03-13T20:43:50.129Z","visited":18}
+{"actions":["偷20(荷包牡丹/银杏树苗/风信子/蔷薇/向日葵)"],"app":"qq-farm-bot","event":"steal_friend","friendGid":1003911965,"friendName":"椒盐排骨","level":"info","message":"椒盐排骨: 偷20(荷包牡丹/银杏树苗/风信子/蔷薇/向日葵)","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:50.302Z"}
+{"actions":["偷5(秋菊（黄色）/红玫瑰)"],"app":"qq-farm-bot","event":"steal_friend","friendGid":1174292138,"friendName":"芒果","level":"info","message":"芒果: 偷5(秋菊（黄色）/红玫瑰)","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:50.681Z"}
+{"actions":["偷5(迎春花)"],"app":"qq-farm-bot","event":"steal_friend","friendGid":1007612222,"friendName":"蒙面偷菜的好友","level":"info","message":"蒙面偷菜的好友: 偷5(迎春花)","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:51.057Z"}
+{"actions":["偷4(蘑菇)"],"app":"qq-farm-bot","event":"steal_friend","friendGid":1024888092,"friendName":"X140B0","level":"info","message":"X140B0: 偷4(蘑菇)","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:51.443Z"}
+{"actions":["偷4(昙花/荷包牡丹)"],"app":"qq-farm-bot","event":"steal_friend","friendGid":1041179376,"friendName":"·","level":"info","message":"·: 偷4(昙花/荷包牡丹)","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:51.830Z"}
+{"actions":["偷3(石榴)"],"app":"qq-farm-bot","event":"steal_friend","friendGid":1029907707,"friendName":"ℒᎭℯ⃝赶路人","level":"info","message":"ℒᎭℯ⃝赶路人: 偷3(石榴)","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:52.199Z"}
+{"actions":["偷1(风信子)"],"app":"qq-farm-bot","event":"steal_friend","friendGid":1007244519,"friendName":"清风明月","level":"info","message":"清风明月: 偷1(风信子)","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:43:52.576Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 偷42","module":"friend","result":"ok","summary":["偷42"],"tag":"好友","timestamp":"2026-03-13T20:43:52.825Z","visited":7}
+{"app":"qq-farm-bot","count":2,"event":"扫描任务","level":"info","message":"发现 2 个可领取任务","module":"task","result":"ok","tag":"任务","timestamp":"2026-03-13T20:43:53.984Z"}
+{"app":"qq-farm-bot","count":1,"event":"扫描任务","level":"info","message":"每日任务可领取: 在1个好友农场进行互动","module":"task","result":"ok","scope":"daily","tag":"任务","timestamp":"2026-03-13T20:43:53.984Z"}
+{"app":"qq-farm-bot","event":"领取任务","level":"info","message":"领取(每日任务): 在1个好友农场进行互动 → 点券50","module":"task","result":"ok","shared":false,"tag":"任务","taskId":200003,"timestamp":"2026-03-13T20:43:54.022Z"}
+{"app":"qq-farm-bot","count":5,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 5 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:06.193Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"青青子衿","index":1,"level":"info","message":"批量帮助第 1/5 个好友: 青青子衿","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:06.193Z","total":5}
+{"actions":["水1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1008667035,"friendName":"青青子衿","level":"info","message":"青青子衿: 水1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:44:06.529Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"青青子衿","index":1,"level":"info","message":"批量帮助第 1 个好友完成: 青青子衿","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:06.566Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"大科","index":2,"level":"info","message":"批量帮助第 2/5 个好友: 大科","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:06.779Z","total":5}
+{"actions":["虫1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1013346103,"friendName":"大科","level":"info","message":"大科: 虫1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:44:07.112Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"大科","index":2,"level":"info","message":"批量帮助第 2 个好友完成: 大科","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:07.149Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"♚     ＆","index":3,"level":"info","message":"批量帮助第 3/5 个好友: ♚     ＆","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:07.363Z","total":5}
+{"actions":["草1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1135486038,"friendName":"♚     ＆","level":"info","message":"♚     ＆: 草1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:44:07.692Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"♚     ＆","index":3,"level":"info","message":"批量帮助第 3 个好友完成: ♚     ＆","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:07.730Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"ℒᎭℯ⃝赶路人","index":4,"level":"info","message":"批量帮助第 4/5 个好友: ℒᎭℯ⃝赶路人","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:07.937Z","total":5}
+{"actions":["水1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1029907707,"friendName":"ℒᎭℯ⃝赶路人","level":"info","message":"ℒᎭℯ⃝赶路人: 水1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:44:08.267Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"ℒᎭℯ⃝赶路人","index":4,"level":"info","message":"批量帮助第 4 个好友完成: ℒᎭℯ⃝赶路人","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:08.304Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"滚去学习吧","index":5,"level":"info","message":"批量帮助第 5/5 个好友: 滚去学习吧","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:08.520Z","total":5}
+{"actions":["水1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1064759234,"friendName":"滚去学习吧","level":"info","message":"滚去学习吧: 水1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:44:08.865Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"滚去学习吧","index":5,"level":"info","message":"批量帮助第 5 个好友完成: 滚去学习吧","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:08.903Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:09.114Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除草1/除虫1/浇水3","module":"friend","result":"ok","summary":["除草1","除虫1","浇水3"],"tag":"好友","timestamp":"2026-03-13T20:44:09.115Z","visited":5}
+{"accountId":"2","accountName":"171761515","app":"qq-farm-bot","level":"info","message":"正在启动账号: 171761515","module":"runtime","tag":"系统","timestamp":"2026-03-13T20:44:19.672Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在加载 Protobuf 定义...","module":"system","tag":"系统","timestamp":"2026-03-13T20:44:19.840Z"}
+{"app":"qq-farm-bot","level":"info","message":"Protobuf 定义加载完成","module":"system","tag":"系统","timestamp":"2026-03-13T20:44:19.863Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在连接服务器...","module":"system","tag":"系统","timestamp":"2026-03-13T20:44:19.864Z"}
+{"app":"qq-farm-bot","level":"info","message":"登录成功: ㅤㅤ (Lv37)","module":"system","tag":"系统","timestamp":"2026-03-13T20:44:20.197Z"}
+{"app":"qq-farm-bot","level":"info","message":"当前为 QQ 环境，跳过邀请码处理（仅微信支持）","module":"system","tag":"系统","timestamp":"2026-03-13T20:44:20.238Z"}
+{"accountId":"2","accountName":"171761515","app":"qq-farm-bot","level":"info","message":"已同步账号昵称: None -> ㅤㅤ","module":"runtime","tag":"系统","timestamp":"2026-03-13T20:44:20.241Z"}
+{"app":"qq-farm-bot","event":"email_rewards","level":"info","message":"今日暂无可领取邮箱奖励","module":"task","result":"none","tag":"任务","timestamp":"2026-03-13T20:44:20.283Z"}
+{"app":"qq-farm-bot","event":"daily_share","level":"info","message":"今日分享奖励已领取","module":"task","result":"none","tag":"任务","timestamp":"2026-03-13T20:44:20.398Z"}
+{"app":"qq-farm-bot","event":"month_card_gift","level":"info","message":"今日暂无可领取月卡礼包","module":"task","result":"none","tag":"任务","timestamp":"2026-03-13T20:44:20.438Z"}
+{"app":"qq-farm-bot","event":"mall_free_gifts","level":"info","message":"本次未成功领取免费礼包","module":"task","result":"none","tag":"任务","timestamp":"2026-03-13T20:44:20.516Z"}
+{"app":"qq-farm-bot","event":"vip_daily_gift","level":"info","message":"今日暂无可领取会员礼包","module":"task","result":"none","tag":"任务","timestamp":"2026-03-13T20:44:20.555Z"}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:24.168Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"忘柯","index":1,"level":"info","message":"批量帮助第 1/1 个好友: 忘柯","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:24.168Z","total":1}
+{"actions":["水1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1058183740,"friendName":"忘柯","level":"info","message":"忘柯: 水1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:44:24.505Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"忘柯","index":1,"level":"info","message":"批量帮助第 1 个好友完成: 忘柯","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:24.543Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:24.755Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 浇水1","module":"friend","result":"ok","summary":["浇水1"],"tag":"好友","timestamp":"2026-03-13T20:44:24.756Z","visited":1}
+{"addedFromVisitors":5,"app":"qq-farm-bot","event":"visitor_gid_sync","level":"info","message":"已从最近访客自动补充 5 个 GID，当前已知好友 GID 共 5 个","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:44:30.588Z","totalKnownGids":5}
+{"actions":["偷22(天香百合)"],"app":"qq-farm-bot","event":"steal_friend","friendGid":1183613021,"friendName":"ㅤㅤㅤ","level":"info","message":"ㅤㅤㅤ: 偷22(天香百合)","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:44:30.770Z"}
+{"actions":["偷19(秋菊（红色）)"],"app":"qq-farm-bot","event":"steal_friend","friendGid":1081376029,"friendName":"h","level":"info","message":"h: 偷19(秋菊（红色）)","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:44:31.160Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 偷41","module":"friend","result":"ok","summary":["偷41"],"tag":"好友","timestamp":"2026-03-13T20:44:31.402Z","visited":2}
+{"app":"qq-farm-bot","count":2,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 2 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:33.290Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"赴京椋","index":1,"level":"info","message":"批量帮助第 1/2 个好友: 赴京椋","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:33.290Z","total":2}
+{"actions":["草4","虫8","水7"],"app":"qq-farm-bot","event":"help_friend","friendGid":1022211522,"friendName":"赴京椋","level":"info","message":"赴京椋: 草4/虫8/水7","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:44:34.209Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"赴京椋","index":1,"level":"info","message":"批量帮助第 1 个好友完成: 赴京椋","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:34.247Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"rabbit","index":2,"level":"info","message":"批量帮助第 2/2 个好友: rabbit","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:34.463Z","total":2}
+{"actions":["水1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1008102044,"friendName":"rabbit","level":"info","message":"rabbit: 水1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:44:34.793Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"rabbit","index":2,"level":"info","message":"批量帮助第 2 个好友完成: rabbit","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:34.831Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:35.041Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除草4/除虫8/浇水8","module":"friend","result":"ok","summary":["除草4","除虫8","浇水8"],"tag":"好友","timestamp":"2026-03-13T20:44:35.042Z","visited":2}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:36.811Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"︶ㄣ沉浮于世的微尘╮","index":1,"level":"info","message":"批量帮助第 1/1 个好友: ︶ㄣ沉浮于世的微尘╮","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:36.811Z","total":1}
+{"actions":["水1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1037578020,"friendName":"︶ㄣ沉浮于世的微尘╮","level":"info","message":"︶ㄣ沉浮于世的微尘╮: 水1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:44:37.148Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"︶ㄣ沉浮于世的微尘╮","index":1,"level":"info","message":"批量帮助第 1 个好友完成: ︶ㄣ沉浮于世的微尘╮","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:37.186Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:37.399Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 浇水1","module":"friend","result":"ok","summary":["浇水1"],"tag":"好友","timestamp":"2026-03-13T20:44:37.399Z","visited":1}
+{"app":"qq-farm-bot","count":2,"event":"扫描任务","level":"info","message":"发现 2 个可领取任务","module":"task","result":"ok","tag":"任务","timestamp":"2026-03-13T20:44:37.691Z"}
+{"app":"qq-farm-bot","count":1,"event":"扫描任务","level":"info","message":"每日任务可领取: 在1个好友农场进行互动","module":"task","result":"ok","scope":"daily","tag":"任务","timestamp":"2026-03-13T20:44:37.692Z"}
+{"app":"qq-farm-bot","event":"领取任务","level":"info","message":"领取(每日任务): 在1个好友农场进行互动 → 点券50","module":"task","result":"ok","shared":false,"tag":"任务","taskId":200003,"timestamp":"2026-03-13T20:44:37.731Z"}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:47.453Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"星空&月光","index":1,"level":"info","message":"批量帮助第 1/1 个好友: 星空&月光","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:47.453Z","total":1}
+{"actions":["水1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1131477698,"friendName":"星空&月光","level":"info","message":"星空&月光: 水1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:44:47.783Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"星空&月光","index":1,"level":"info","message":"批量帮助第 1 个好友完成: 星空&月光","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:47.821Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:48.035Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 浇水1","module":"friend","result":"ok","summary":["浇水1"],"tag":"好友","timestamp":"2026-03-13T20:44:48.035Z","visited":1}
+{"app":"qq-farm-bot","event":"获取好友列表","level":"info","message":"开始获取好友列表","module":"friend","tag":"好友","timestamp":"2026-03-13T20:44:55.815Z"}
+{"app":"qq-farm-bot","count":5,"event":"获取好友列表","level":"info","message":"获取好友列表成功，共 5 位好友","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:44:55.856Z"}
+{"app":"qq-farm-bot","count":3,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 3 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:45:03.091Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"冬梅","index":1,"level":"info","message":"批量帮助第 1/3 个好友: 冬梅","module":"friend","tag":"好友","timestamp":"2026-03-13T20:45:03.091Z","total":3}
+{"actions":["水1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1063838584,"friendName":"冬梅","level":"info","message":"冬梅: 水1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:45:03.426Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"冬梅","index":1,"level":"info","message":"批量帮助第 1 个好友完成: 冬梅","module":"friend","tag":"好友","timestamp":"2026-03-13T20:45:03.464Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"星空86.2","index":2,"level":"info","message":"批量帮助第 2/3 个好友: 星空86.2","module":"friend","tag":"好友","timestamp":"2026-03-13T20:45:03.675Z","total":3}
+{"actions":["虫1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1045956375,"friendName":"星空86.2","level":"info","message":"星空86.2: 虫1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:45:04.002Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"星空86.2","index":2,"level":"info","message":"批量帮助第 2 个好友完成: 星空86.2","module":"friend","tag":"好友","timestamp":"2026-03-13T20:45:04.040Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"♚     ＆","index":3,"level":"info","message":"批量帮助第 3/3 个好友: ♚     ＆","module":"friend","tag":"好友","timestamp":"2026-03-13T20:45:04.251Z","total":3}
+{"actions":["虫1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1135486038,"friendName":"♚     ＆","level":"info","message":"♚     ＆: 虫1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:45:04.594Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"♚     ＆","index":3,"level":"info","message":"批量帮助第 3 个好友完成: ♚     ＆","module":"friend","tag":"好友","timestamp":"2026-03-13T20:45:04.632Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:45:04.846Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除虫2/浇水1","module":"friend","result":"ok","summary":["除虫2","浇水1"],"tag":"好友","timestamp":"2026-03-13T20:45:04.846Z","visited":3}
+{"actions":["浇水1"],"app":"qq-farm-bot","event":"农场循环","level":"info","message":"[草:2 水:1 长:23] → 浇水1","module":"farm","opType":"all","tag":"农场","timestamp":"2026-03-13T20:45:29.746Z"}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:45:41.290Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"Vullfin","index":1,"level":"info","message":"批量帮助第 1/1 个好友: Vullfin","module":"friend","tag":"好友","timestamp":"2026-03-13T20:45:41.290Z","total":1}
+{"app":"qq-farm-bot","count":1,"event":"土地推送通知","level":"info","message":"收到推送: 1块土地变化，检查中...","module":"farm","result":"trigger_check","tag":"农场","timestamp":"2026-03-13T20:45:41.413Z"}
+{"actions":["虫1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1030281574,"friendName":"Vullfin","level":"info","message":"Vullfin: 虫1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:45:41.627Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"Vullfin","index":1,"level":"info","message":"批量帮助第 1 个好友完成: Vullfin","module":"friend","tag":"好友","timestamp":"2026-03-13T20:45:41.665Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:45:41.877Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除虫1","module":"friend","result":"ok","summary":["除虫1"],"tag":"好友","timestamp":"2026-03-13T20:45:41.877Z","visited":1}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:45:43.989Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"青青子衿","index":1,"level":"info","message":"批量帮助第 1/1 个好友: 青青子衿","module":"friend","tag":"好友","timestamp":"2026-03-13T20:45:43.990Z","total":1}
+{"actions":["草1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1008667035,"friendName":"青青子衿","level":"info","message":"青青子衿: 草1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:45:44.327Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"青青子衿","index":1,"level":"info","message":"批量帮助第 1 个好友完成: 青青子衿","module":"friend","tag":"好友","timestamp":"2026-03-13T20:45:44.365Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:45:44.580Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除草1","module":"friend","result":"ok","summary":["除草1"],"tag":"好友","timestamp":"2026-03-13T20:45:44.581Z","visited":1}
+{"app":"qq-farm-bot","count":2,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 2 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:00.334Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"芒果","index":1,"level":"info","message":"批量帮助第 1/2 个好友: 芒果","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:00.334Z","total":2}
+{"actions":["虫2"],"app":"qq-farm-bot","event":"help_friend","friendGid":1174292138,"friendName":"芒果","level":"info","message":"芒果: 虫2","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:46:00.667Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"芒果","index":1,"level":"info","message":"批量帮助第 1 个好友完成: 芒果","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:00.705Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"Liu","index":2,"level":"info","message":"批量帮助第 2/2 个好友: Liu","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:00.919Z","total":2}
+{"actions":["草1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1015439887,"friendName":"Liu","level":"info","message":"Liu: 草1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:46:01.261Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"Liu","index":2,"level":"info","message":"批量帮助第 2 个好友完成: Liu","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:01.299Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:01.511Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除草1/除虫2","module":"friend","result":"ok","summary":["除草1","除虫2"],"tag":"好友","timestamp":"2026-03-13T20:46:01.512Z","visited":2}
+{"app":"qq-farm-bot","count":2,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 2 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:16.555Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"辞安.","index":1,"level":"info","message":"批量帮助第 1/2 个好友: 辞安.","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:16.556Z","total":2}
+{"actions":["虫1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1030896537,"friendName":"辞安.","level":"info","message":"辞安.: 虫1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:46:16.880Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"辞安.","index":1,"level":"info","message":"批量帮助第 1 个好友完成: 辞安.","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:16.917Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"ℒᎭℯ⃝赶路人","index":2,"level":"info","message":"批量帮助第 2/2 个好友: ℒᎭℯ⃝赶路人","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:17.130Z","total":2}
+{"actions":["水1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1029907707,"friendName":"ℒᎭℯ⃝赶路人","level":"info","message":"ℒᎭℯ⃝赶路人: 水1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:46:17.471Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"ℒᎭℯ⃝赶路人","index":2,"level":"info","message":"批量帮助第 2 个好友完成: ℒᎭℯ⃝赶路人","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:17.509Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:17.724Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除虫1/浇水1","module":"friend","result":"ok","summary":["除虫1","浇水1"],"tag":"好友","timestamp":"2026-03-13T20:46:17.724Z","visited":2}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:23.022Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"Vullfin","index":1,"level":"info","message":"批量帮助第 1/1 个好友: Vullfin","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:23.023Z","total":1}
+{"app":"qq-farm-bot","count":1,"event":"土地推送通知","level":"info","message":"收到推送: 1块土地变化，检查中...","module":"farm","result":"trigger_check","tag":"农场","timestamp":"2026-03-13T20:46:23.142Z"}
+{"actions":["水1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1030281574,"friendName":"Vullfin","level":"info","message":"Vullfin: 水1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:46:23.344Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"Vullfin","index":1,"level":"info","message":"批量帮助第 1 个好友完成: Vullfin","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:23.382Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:23.592Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 浇水1","module":"friend","result":"ok","summary":["浇水1"],"tag":"好友","timestamp":"2026-03-13T20:46:23.592Z","visited":1}
+{"app":"qq-farm-bot","count":2,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 2 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:29.781Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"狼狈の╄→じ☆νě","index":1,"level":"info","message":"批量帮助第 1/2 个好友: 狼狈の╄→じ☆νě","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:29.781Z","total":2}
+{"actions":["虫1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1119318556,"friendName":"狼狈の╄→じ☆νě","level":"info","message":"狼狈の╄→じ☆νě: 虫1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:46:30.113Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"狼狈の╄→じ☆νě","index":1,"level":"info","message":"批量帮助第 1 个好友完成: 狼狈の╄→じ☆νě","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:30.151Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"滚去学习吧","index":2,"level":"info","message":"批量帮助第 2/2 个好友: 滚去学习吧","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:30.361Z","total":2}
+{"actions":["虫1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1064759234,"friendName":"滚去学习吧","level":"info","message":"滚去学习吧: 虫1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:46:30.692Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"滚去学习吧","index":2,"level":"info","message":"批量帮助第 2 个好友完成: 滚去学习吧","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:30.729Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:30.941Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除虫2","module":"friend","result":"ok","summary":["除虫2"],"tag":"好友","timestamp":"2026-03-13T20:46:30.942Z","visited":2}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:45.184Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"狼狈の╄→じ☆νě","index":1,"level":"info","message":"批量帮助第 1/1 个好友: 狼狈の╄→じ☆νě","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:45.184Z","total":1}
+{"actions":["草1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1119318556,"friendName":"狼狈の╄→じ☆νě","level":"info","message":"狼狈の╄→じ☆νě: 草1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:46:45.516Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"狼狈の╄→じ☆νě","index":1,"level":"info","message":"批量帮助第 1 个好友完成: 狼狈の╄→じ☆νě","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:45.554Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:46:45.770Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除草1","module":"friend","result":"ok","summary":["除草1"],"tag":"好友","timestamp":"2026-03-13T20:46:45.770Z","visited":1}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:02.743Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"赴京椋","index":1,"level":"info","message":"批量帮助第 1/1 个好友: 赴京椋","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:02.744Z","total":1}
+{"actions":["草1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1022211522,"friendName":"赴京椋","level":"info","message":"赴京椋: 草1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:47:03.090Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"赴京椋","index":1,"level":"info","message":"批量帮助第 1 个好友完成: 赴京椋","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:03.129Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:03.338Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除草1","module":"friend","result":"ok","summary":["除草1"],"tag":"好友","timestamp":"2026-03-13T20:47:03.338Z","visited":1}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:10.859Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"清风明月","index":1,"level":"info","message":"批量帮助第 1/1 个好友: 清风明月","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:10.860Z","total":1}
+{"actions":["水1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1007244519,"friendName":"清风明月","level":"info","message":"清风明月: 水1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:47:11.188Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"清风明月","index":1,"level":"info","message":"批量帮助第 1 个好友完成: 清风明月","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:11.226Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:11.436Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 浇水1","module":"friend","result":"ok","summary":["浇水1"],"tag":"好友","timestamp":"2026-03-13T20:47:11.436Z","visited":1}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:26.433Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"rabbit","index":1,"level":"info","message":"批量帮助第 1/1 个好友: rabbit","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:26.433Z","total":1}
+{"app":"qq-farm-bot","count":3,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 3 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:26.481Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"轻","index":1,"level":"info","message":"批量帮助第 1/3 个好友: 轻","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:26.481Z","total":3}
+{"actions":["水1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1008102044,"friendName":"rabbit","level":"info","message":"rabbit: 水1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:47:26.769Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"rabbit","index":1,"level":"info","message":"批量帮助第 1 个好友完成: rabbit","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:26.808Z"}
+{"actions":["草1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1015998110,"friendName":"轻","level":"info","message":"轻: 草1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:47:26.816Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"轻","index":1,"level":"info","message":"批量帮助第 1 个好友完成: 轻","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:26.854Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:27.021Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 浇水1","module":"friend","result":"ok","summary":["浇水1"],"tag":"好友","timestamp":"2026-03-13T20:47:27.021Z","visited":1}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"rabbit","index":2,"level":"info","message":"批量帮助第 2/3 个好友: rabbit","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:27.067Z","total":3}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"rabbit","index":2,"level":"info","message":"批量帮助第 2 个好友完成: rabbit","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:27.149Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"滚去学习吧","index":3,"level":"info","message":"批量帮助第 3/3 个好友: 滚去学习吧","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:27.362Z","total":3}
+{"actions":["虫1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1064759234,"friendName":"滚去学习吧","level":"info","message":"滚去学习吧: 虫1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:47:27.691Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"滚去学习吧","index":3,"level":"info","message":"批量帮助第 3 个好友完成: 滚去学习吧","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:27.728Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:27.940Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除草1/除虫1","module":"friend","result":"ok","summary":["除草1","除虫1"],"tag":"好友","timestamp":"2026-03-13T20:47:27.940Z","visited":3}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:40.987Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"青青子衿","index":1,"level":"info","message":"批量帮助第 1/1 个好友: 青青子衿","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:40.988Z","total":1}
+{"actions":["虫1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1008667035,"friendName":"青青子衿","level":"info","message":"青青子衿: 虫1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:47:41.328Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"青青子衿","index":1,"level":"info","message":"批量帮助第 1 个好友完成: 青青子衿","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:41.366Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:41.581Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除虫1","module":"friend","result":"ok","summary":["除虫1"],"tag":"好友","timestamp":"2026-03-13T20:47:41.581Z","visited":1}
+{"actions":["浇水1"],"app":"qq-farm-bot","event":"农场循环","level":"info","message":"[虫:1 水:1 长:24] → 浇水1","module":"farm","opType":"all","tag":"农场","timestamp":"2026-03-13T20:47:47.924Z"}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:50.121Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"Vullfin","index":1,"level":"info","message":"批量帮助第 1/1 个好友: Vullfin","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:50.121Z","total":1}
+{"app":"qq-farm-bot","count":1,"event":"土地推送通知","level":"info","message":"收到推送: 1块土地变化，检查中...","module":"farm","result":"trigger_check","tag":"农场","timestamp":"2026-03-13T20:47:50.246Z"}
+{"actions":["虫1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1030281574,"friendName":"Vullfin","level":"info","message":"Vullfin: 虫1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:47:50.457Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"Vullfin","index":1,"level":"info","message":"批量帮助第 1 个好友完成: Vullfin","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:50.495Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:50.710Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除虫1","module":"friend","result":"ok","summary":["除虫1"],"tag":"好友","timestamp":"2026-03-13T20:47:50.710Z","visited":1}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:52.628Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"谭妹妹","index":1,"level":"info","message":"批量帮助第 1/1 个好友: 谭妹妹","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:52.629Z","total":1}
+{"actions":["虫1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1063178659,"friendName":"谭妹妹","level":"info","message":"谭妹妹: 虫1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:47:52.965Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"谭妹妹","index":1,"level":"info","message":"批量帮助第 1 个好友完成: 谭妹妹","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:53.002Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:47:53.202Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除虫1","module":"friend","result":"ok","summary":["除虫1"],"tag":"好友","timestamp":"2026-03-13T20:47:53.203Z","visited":1}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:02.753Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"Vullfin","index":1,"level":"info","message":"批量帮助第 1/1 个好友: Vullfin","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:02.753Z","total":1}
+{"app":"qq-farm-bot","count":1,"event":"土地推送通知","level":"info","message":"收到推送: 1块土地变化，检查中...","module":"farm","result":"trigger_check","tag":"农场","timestamp":"2026-03-13T20:48:02.877Z"}
+{"actions":["虫1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1030281574,"friendName":"Vullfin","level":"info","message":"Vullfin: 虫1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:48:03.089Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"Vullfin","index":1,"level":"info","message":"批量帮助第 1 个好友完成: Vullfin","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:03.127Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:03.329Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除虫1","module":"friend","result":"ok","summary":["除虫1"],"tag":"好友","timestamp":"2026-03-13T20:48:03.329Z","visited":1}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:06.251Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"忘柯","index":1,"level":"info","message":"批量帮助第 1/1 个好友: 忘柯","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:06.252Z","total":1}
+{"actions":["水1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1058183740,"friendName":"忘柯","level":"info","message":"忘柯: 水1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:48:06.589Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"忘柯","index":1,"level":"info","message":"批量帮助第 1 个好友完成: 忘柯","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:06.627Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:06.838Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 浇水1","module":"friend","result":"ok","summary":["浇水1"],"tag":"好友","timestamp":"2026-03-13T20:48:06.839Z","visited":1}
+{"accountId":"3","accountName":"233","app":"qq-farm-bot","level":"info","message":"正在启动账号: 233","module":"runtime","tag":"系统","timestamp":"2026-03-13T20:48:16.515Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在加载 Protobuf 定义...","module":"system","tag":"系统","timestamp":"2026-03-13T20:48:16.686Z"}
+{"app":"qq-farm-bot","level":"info","message":"Protobuf 定义加载完成","module":"system","tag":"系统","timestamp":"2026-03-13T20:48:16.711Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在连接服务器...","module":"system","tag":"系统","timestamp":"2026-03-13T20:48:16.712Z"}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:16.887Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"白开水","index":1,"level":"info","message":"批量帮助第 1/1 个好友: 白开水","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:16.887Z","total":1}
+{"actions":["水1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1015403554,"friendName":"白开水","level":"info","message":"白开水: 水1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:48:17.225Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"白开水","index":1,"level":"info","message":"批量帮助第 1 个好友完成: 白开水","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:17.262Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:17.463Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 浇水1","module":"friend","result":"ok","summary":["浇水1"],"tag":"好友","timestamp":"2026-03-13T20:48:17.463Z","visited":1}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:26.432Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"Vullfin","index":1,"level":"info","message":"批量帮助第 1/1 个好友: Vullfin","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:26.432Z","total":1}
+{"app":"qq-farm-bot","count":1,"event":"土地推送通知","level":"info","message":"收到推送: 1块土地变化，检查中...","module":"farm","result":"trigger_check","tag":"农场","timestamp":"2026-03-13T20:48:26.559Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"今日帮助经验已达上限，自动停止帮忙","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:48:26.770Z"}
+{"actions":["虫1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1030281574,"friendName":"Vullfin","level":"info","message":"Vullfin: 虫1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:48:26.770Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"Vullfin","index":1,"level":"info","message":"批量帮助第 1 个好友完成: Vullfin","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:26.808Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:27.022Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除虫1","module":"friend","result":"ok","summary":["除虫1"],"tag":"好友","timestamp":"2026-03-13T20:48:27.022Z","visited":1}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:27.507Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"清风明月","index":1,"level":"info","message":"批量帮助第 1/1 个好友: 清风明月","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:27.507Z","total":1}
+{"actions":["草1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1007244519,"friendName":"清风明月","level":"info","message":"清风明月: 草1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:48:27.844Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"清风明月","index":1,"level":"info","message":"批量帮助第 1 个好友完成: 清风明月","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:27.882Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:28.089Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除草1","module":"friend","result":"ok","summary":["除草1"],"tag":"好友","timestamp":"2026-03-13T20:48:28.089Z","visited":1}
+{"app":"qq-farm-bot","level":"info","message":"登录成功: h (Lv30)","module":"system","tag":"系统","timestamp":"2026-03-13T20:48:28.121Z"}
+{"app":"qq-farm-bot","level":"info","message":"当前为 QQ 环境，跳过邀请码处理（仅微信支持）","module":"system","tag":"系统","timestamp":"2026-03-13T20:48:28.164Z"}
+{"accountId":"3","accountName":"233","app":"qq-farm-bot","level":"info","message":"已同步账号昵称: None -> h","module":"runtime","tag":"系统","timestamp":"2026-03-13T20:48:28.167Z"}
+{"app":"qq-farm-bot","event":"email_rewards","level":"info","message":"今日暂无可领取邮箱奖励","module":"task","result":"none","tag":"任务","timestamp":"2026-03-13T20:48:28.213Z"}
+{"app":"qq-farm-bot","count":0,"event":"daily_share","level":"info","message":"领取成功","module":"task","result":"ok","tag":"任务","timestamp":"2026-03-13T20:48:28.335Z"}
+{"app":"qq-farm-bot","event":"month_card_gift","level":"info","message":"今日暂无可领取月卡礼包","module":"task","result":"none","tag":"任务","timestamp":"2026-03-13T20:48:28.376Z"}
+{"app":"qq-farm-bot","count":1,"event":"mall_free_gifts","level":"info","message":"自动购买免费礼包 x1","module":"task","result":"ok","tag":"任务","timestamp":"2026-03-13T20:48:28.459Z"}
+{"app":"qq-farm-bot","event":"vip_daily_gift","level":"info","message":"今日暂无可领取会员礼包","module":"task","result":"none","tag":"任务","timestamp":"2026-03-13T20:48:28.500Z"}
+{"app":"qq-farm-bot","count":19,"event":"收获作物","landIds":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],"level":"info","message":"收获完成 19 块土地","module":"farm","result":"ok","tag":"农场","timestamp":"2026-03-13T20:48:34.263Z"}
+{"app":"qq-farm-bot","count":19,"event":"铲除植物","level":"info","message":"已铲除 19 块 (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19)","module":"farm","result":"ok","tag":"农场","timestamp":"2026-03-13T20:48:34.304Z"}
+{"app":"qq-farm-bot","event":"选择种子","level":"info","message":"最佳种子: 秋菊（红色） (20162) 价格=888金币 生长4小时","module":"warehouse","price":888,"seedId":20162,"tag":"仓库","timestamp":"2026-03-13T20:48:34.347Z"}
+{"app":"qq-farm-bot","cost":16872,"count":19,"event":"购买种子","level":"info","message":"已购买 秋菊（红色）种子 x19, 花费 16872 金币","module":"warehouse","result":"ok","seedId":20162,"tag":"仓库","timestamp":"2026-03-13T20:48:34.387Z"}
+{"app":"qq-farm-bot","count":19,"event":"种植种子","level":"info","message":"已在 19 块地种植 (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19)","module":"farm","occupiedCount":19,"result":"ok","seedId":20162,"tag":"农场","timestamp":"2026-03-13T20:48:36.187Z"}
+{"actions":["收获19","种植19"],"app":"qq-farm-bot","event":"农场循环","level":"info","message":"[收:19 长:0] → 收获19/种植19","module":"farm","opType":"all","tag":"农场","timestamp":"2026-03-13T20:48:36.386Z"}
+{"app":"qq-farm-bot","count":4,"event":"扫描任务","level":"info","message":"发现 4 个可领取任务","module":"task","result":"ok","tag":"任务","timestamp":"2026-03-13T20:48:36.426Z"}
+{"app":"qq-farm-bot","count":2,"event":"扫描任务","level":"info","message":"每日任务可领取: 采摘1次果实，每日登录游戏","module":"task","result":"ok","scope":"daily","tag":"任务","timestamp":"2026-03-13T20:48:36.426Z"}
+{"app":"qq-farm-bot","event":"领取任务","level":"info","message":"领取(每日任务): 采摘1次果实 → 点券50","module":"task","result":"ok","shared":false,"tag":"任务","taskId":200002,"timestamp":"2026-03-13T20:48:36.467Z"}
+{"app":"qq-farm-bot","event":"领取任务","level":"info","message":"领取(每日任务): 每日登录游戏 → 点券50","module":"task","result":"ok","shared":false,"tag":"任务","taskId":200001,"timestamp":"2026-03-13T20:48:36.822Z"}
+{"addedFromVisitors":2,"app":"qq-farm-bot","event":"visitor_gid_sync","level":"info","message":"已从最近访客自动补充 2 个 GID，当前已知好友 GID 共 2 个","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:48:38.386Z","totalKnownGids":2}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:38.430Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"ㅤㅤ","index":1,"level":"info","message":"批量帮助第 1/1 个好友: ㅤㅤ","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:38.430Z","total":1}
+{"app":"qq-farm-bot","count":2,"event":"土地推送通知","level":"info","message":"收到推送: 2块土地变化，检查中...","module":"farm","result":"trigger_check","tag":"农场","timestamp":"2026-03-13T20:48:38.562Z"}
+{"addedFromVisitors":1,"app":"qq-farm-bot","event":"visitor_gid_sync","level":"info","message":"已从最近访客自动补充 1 个 GID，当前已知好友 GID 共 34 个","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:48:38.684Z","totalKnownGids":34}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:38.726Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"ㅤㅤ","index":1,"level":"info","message":"批量帮助第 1/1 个好友: ㅤㅤ","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:38.726Z","total":1}
+{"actions":["草2"],"app":"qq-farm-bot","event":"help_friend","friendGid":1181938107,"friendName":"ㅤㅤ","level":"info","message":"ㅤㅤ: 草2","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:48:38.781Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"ㅤㅤ","index":1,"level":"info","message":"批量帮助第 1 个好友完成: ㅤㅤ","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:38.808Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"ㅤㅤ","index":1,"level":"info","message":"批量帮助第 1 个好友完成: ㅤㅤ","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:38.820Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:39.016Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:39.031Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除草2","module":"friend","result":"ok","summary":["除草2"],"tag":"好友","timestamp":"2026-03-13T20:48:39.032Z","visited":1}
+{"app":"qq-farm-bot","count":2,"event":"扫描任务","level":"info","message":"发现 2 个可领取任务","module":"task","result":"ok","tag":"任务","timestamp":"2026-03-13T20:48:47.486Z"}
+{"app":"qq-farm-bot","count":1,"event":"扫描任务","level":"info","message":"每日任务可领取: 在1个好友农场进行互动","module":"task","result":"ok","scope":"daily","tag":"任务","timestamp":"2026-03-13T20:48:47.487Z"}
+{"app":"qq-farm-bot","event":"领取任务","level":"info","message":"领取(每日任务): 在1个好友农场进行互动 → 点券50","module":"task","result":"ok","shared":false,"tag":"任务","taskId":200003,"timestamp":"2026-03-13T20:48:47.526Z"}
+{"app":"qq-farm-bot","count":2,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 2 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:49.066Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"白开水","index":1,"level":"info","message":"批量帮助第 1/2 个好友: 白开水","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:49.066Z","total":2}
+{"actions":["水1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1015403554,"friendName":"白开水","level":"info","message":"白开水: 水1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:48:49.393Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"白开水","index":1,"level":"info","message":"批量帮助第 1 个好友完成: 白开水","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:49.431Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"冬梅","index":2,"level":"info","message":"批量帮助第 2/2 个好友: 冬梅","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:49.646Z","total":2}
+{"actions":["虫1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1063838584,"friendName":"冬梅","level":"info","message":"冬梅: 虫1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:48:49.979Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"冬梅","index":2,"level":"info","message":"批量帮助第 2 个好友完成: 冬梅","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:50.017Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:50.230Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除虫1/浇水1","module":"friend","result":"ok","summary":["除虫1","浇水1"],"tag":"好友","timestamp":"2026-03-13T20:48:50.230Z","visited":2}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:54.584Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"ㅤㅤ","index":1,"level":"info","message":"批量帮助第 1/1 个好友: ㅤㅤ","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:54.584Z","total":1}
+{"app":"qq-farm-bot","count":1,"event":"土地推送通知","level":"info","message":"收到推送: 1块土地变化，检查中...","module":"farm","result":"trigger_check","tag":"农场","timestamp":"2026-03-13T20:48:54.711Z"}
+{"actions":["虫1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1181938107,"friendName":"ㅤㅤ","level":"info","message":"ㅤㅤ: 虫1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:48:54.922Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"ㅤㅤ","index":1,"level":"info","message":"批量帮助第 1 个好友完成: ㅤㅤ","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:54.962Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:48:55.174Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除虫1","module":"friend","result":"ok","summary":["除虫1"],"tag":"好友","timestamp":"2026-03-13T20:48:55.174Z","visited":1}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:49:04.283Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"张涛涛♔","index":1,"level":"info","message":"批量帮助第 1/1 个好友: 张涛涛♔","module":"friend","tag":"好友","timestamp":"2026-03-13T20:49:04.283Z","total":1}
+{"actions":["虫1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1123187721,"friendName":"张涛涛♔","level":"info","message":"张涛涛♔: 虫1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:49:04.618Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"张涛涛♔","index":1,"level":"info","message":"批量帮助第 1 个好友完成: 张涛涛♔","module":"friend","tag":"好友","timestamp":"2026-03-13T20:49:04.656Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:49:04.864Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除虫1","module":"friend","result":"ok","summary":["除虫1"],"tag":"好友","timestamp":"2026-03-13T20:49:04.865Z","visited":1}
+{"actions":["浇水1"],"app":"qq-farm-bot","event":"农场循环","level":"info","message":"[水:1 长:24] → 浇水1","module":"farm","opType":"all","tag":"农场","timestamp":"2026-03-13T20:49:16.301Z"}
+{"app":"qq-farm-bot","count":2,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 2 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:49:28.960Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"捌树D|UU","index":1,"level":"info","message":"批量帮助第 1/2 个好友: 捌树D|UU","module":"friend","tag":"好友","timestamp":"2026-03-13T20:49:28.960Z","total":2}
+{"actions":["草1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1125238291,"friendName":"捌树D|UU","level":"info","message":"捌树D|UU: 草1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:49:29.281Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"捌树D|UU","index":1,"level":"info","message":"批量帮助第 1 个好友完成: 捌树D|UU","module":"friend","tag":"好友","timestamp":"2026-03-13T20:49:29.319Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"滚去学习吧","index":2,"level":"info","message":"批量帮助第 2/2 个好友: 滚去学习吧","module":"friend","tag":"好友","timestamp":"2026-03-13T20:49:29.521Z","total":2}
+{"actions":["水1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1064759234,"friendName":"滚去学习吧","level":"info","message":"滚去学习吧: 水1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:49:29.854Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"滚去学习吧","index":2,"level":"info","message":"批量帮助第 2 个好友完成: 滚去学习吧","module":"friend","tag":"好友","timestamp":"2026-03-13T20:49:29.892Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:49:30.093Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除草1/浇水1","module":"friend","result":"ok","summary":["除草1","浇水1"],"tag":"好友","timestamp":"2026-03-13T20:49:30.093Z","visited":2}
+{"app":"qq-farm-bot","count":4,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 4 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:49:42.149Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"慕秋","index":1,"level":"info","message":"批量帮助第 1/4 个好友: 慕秋","module":"friend","tag":"好友","timestamp":"2026-03-13T20:49:42.149Z","total":4}
+{"actions":["虫1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1176430312,"friendName":"慕秋","level":"info","message":"慕秋: 虫1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:49:42.490Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"慕秋","index":1,"level":"info","message":"批量帮助第 1 个好友完成: 慕秋","module":"friend","tag":"好友","timestamp":"2026-03-13T20:49:42.528Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"白开水","index":2,"level":"info","message":"批量帮助第 2/4 个好友: 白开水","module":"friend","tag":"好友","timestamp":"2026-03-13T20:49:42.741Z","total":4}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"今日帮助经验已达上限，自动停止帮忙","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:49:43.071Z"}
+{"actions":["草1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1015403554,"friendName":"白开水","level":"info","message":"白开水: 草1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:49:43.071Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"白开水","index":2,"level":"info","message":"批量帮助第 2 个好友完成: 白开水","module":"friend","tag":"好友","timestamp":"2026-03-13T20:49:43.109Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"忘柯","index":3,"level":"info","message":"批量帮助第 3/4 个好友: 忘柯","module":"friend","tag":"好友","timestamp":"2026-03-13T20:49:43.323Z","total":4}
+{"app":"qq-farm-bot","event":"批量帮助中断","level":"info","message":"批量帮助中断：经验已达上限","module":"friend","reason":"exp_limit","tag":"好友","timestamp":"2026-03-13T20:49:43.323Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:49:43.323Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除草1/除虫1","module":"friend","result":"ok","summary":["除草1","除虫1"],"tag":"好友","timestamp":"2026-03-13T20:49:43.323Z","visited":4}
+{"actions":["偷7(茉莉花)"],"app":"qq-farm-bot","event":"steal_friend","friendGid":1072363939,"friendName":",","level":"info","message":",: 偷7(茉莉花)","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:50:41.569Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 偷7","module":"friend","result":"ok","summary":["偷7"],"tag":"好友","timestamp":"2026-03-13T20:50:41.819Z","visited":1}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:50:54.828Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"ㅤㅤ","index":1,"level":"info","message":"批量帮助第 1/1 个好友: ㅤㅤ","module":"friend","tag":"好友","timestamp":"2026-03-13T20:50:54.828Z","total":1}
+{"app":"qq-farm-bot","count":1,"event":"土地推送通知","level":"info","message":"收到推送: 1块土地变化，检查中...","module":"farm","result":"trigger_check","tag":"农场","timestamp":"2026-03-13T20:50:54.955Z"}
+{"actions":["虫1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1181938107,"friendName":"ㅤㅤ","level":"info","message":"ㅤㅤ: 虫1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:50:55.174Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"ㅤㅤ","index":1,"level":"info","message":"批量帮助第 1 个好友完成: ㅤㅤ","module":"friend","tag":"好友","timestamp":"2026-03-13T20:50:55.213Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:50:55.420Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除虫1","module":"friend","result":"ok","summary":["除虫1"],"tag":"好友","timestamp":"2026-03-13T20:50:55.420Z","visited":1}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:51:36.986Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"ㅤㅤ","index":1,"level":"info","message":"批量帮助第 1/1 个好友: ㅤㅤ","module":"friend","tag":"好友","timestamp":"2026-03-13T20:51:36.987Z","total":1}
+{"app":"qq-farm-bot","count":1,"event":"土地推送通知","level":"info","message":"收到推送: 1块土地变化，检查中...","module":"farm","result":"trigger_check","tag":"农场","timestamp":"2026-03-13T20:51:37.111Z"}
+{"actions":["草1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1181938107,"friendName":"ㅤㅤ","level":"info","message":"ㅤㅤ: 草1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:51:37.316Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"ㅤㅤ","index":1,"level":"info","message":"批量帮助第 1 个好友完成: ㅤㅤ","module":"friend","tag":"好友","timestamp":"2026-03-13T20:51:37.355Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:51:37.562Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除草1","module":"friend","result":"ok","summary":["除草1"],"tag":"好友","timestamp":"2026-03-13T20:51:37.562Z","visited":1}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:52:07.825Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"ㅤㅤ","index":1,"level":"info","message":"批量帮助第 1/1 个好友: ㅤㅤ","module":"friend","tag":"好友","timestamp":"2026-03-13T20:52:07.825Z","total":1}
+{"app":"qq-farm-bot","count":1,"event":"土地推送通知","level":"info","message":"收到推送: 1块土地变化，检查中...","module":"farm","result":"trigger_check","tag":"农场","timestamp":"2026-03-13T20:52:07.951Z"}
+{"actions":["虫1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1181938107,"friendName":"ㅤㅤ","level":"info","message":"ㅤㅤ: 虫1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:52:08.166Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"ㅤㅤ","index":1,"level":"info","message":"批量帮助第 1 个好友完成: ㅤㅤ","module":"friend","tag":"好友","timestamp":"2026-03-13T20:52:08.205Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:52:08.419Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除虫1","module":"friend","result":"ok","summary":["除虫1"],"tag":"好友","timestamp":"2026-03-13T20:52:08.420Z","visited":1}
+{"actions":["浇水1"],"app":"qq-farm-bot","event":"农场循环","level":"info","message":"[水:1 长:19] → 浇水1","module":"farm","opType":"all","tag":"农场","timestamp":"2026-03-13T20:53:19.653Z"}
+{"actions":["偷2(荷包牡丹)"],"app":"qq-farm-bot","event":"steal_friend","friendGid":1003911965,"friendName":"椒盐排骨","level":"info","message":"椒盐排骨: 偷2(荷包牡丹)","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:53:19.760Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 偷2","module":"friend","result":"ok","summary":["偷2"],"tag":"好友","timestamp":"2026-03-13T20:53:20.010Z","visited":1}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:55:30.124Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"ㅤㅤ","index":1,"level":"info","message":"批量帮助第 1/1 个好友: ㅤㅤ","module":"friend","tag":"好友","timestamp":"2026-03-13T20:55:30.125Z","total":1}
+{"actions":["浇水1"],"app":"qq-farm-bot","event":"农场循环","level":"info","message":"[水:1 长:23] → 浇水1","module":"farm","opType":"all","tag":"农场","timestamp":"2026-03-13T20:55:30.140Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"ㅤㅤ","index":1,"level":"info","message":"批量帮助第 1 个好友完成: ㅤㅤ","module":"friend","tag":"好友","timestamp":"2026-03-13T20:55:30.208Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:55:30.410Z"}
+{"actions":["浇水1"],"app":"qq-farm-bot","event":"农场循环","level":"info","message":"[水:1 长:24] → 浇水1","module":"farm","opType":"all","tag":"农场","timestamp":"2026-03-13T20:55:46.098Z"}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:56:21.973Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"Vullfin","index":1,"level":"info","message":"批量帮助第 1/1 个好友: Vullfin","module":"friend","tag":"好友","timestamp":"2026-03-13T20:56:21.973Z","total":1}
+{"app":"qq-farm-bot","count":1,"event":"土地推送通知","level":"info","message":"收到推送: 1块土地变化，检查中...","module":"farm","result":"trigger_check","tag":"农场","timestamp":"2026-03-13T20:56:22.096Z"}
+{"actions":["虫1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1030281574,"friendName":"Vullfin","level":"info","message":"Vullfin: 虫1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:56:22.311Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"Vullfin","index":1,"level":"info","message":"批量帮助第 1 个好友完成: Vullfin","module":"friend","tag":"好友","timestamp":"2026-03-13T20:56:22.350Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:56:22.565Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除虫1","module":"friend","result":"ok","summary":["除虫1"],"tag":"好友","timestamp":"2026-03-13T20:56:22.565Z","visited":1}
+{"actions":["浇水1"],"app":"qq-farm-bot","event":"农场循环","level":"info","message":"[水:1 长:23] → 浇水1","module":"farm","opType":"all","tag":"农场","timestamp":"2026-03-13T20:56:33.349Z"}
+{"app":"qq-farm-bot","level":"info","message":"被踢下线! gatepb.KickoutNotify","module":"system","tag":"系统","timestamp":"2026-03-13T20:57:19.643Z"}
+{"app":"qq-farm-bot","level":"info","message":"原因: 已在其他终端登录","module":"system","tag":"系统","timestamp":"2026-03-13T20:57:19.644Z"}
+{"app":"qq-farm-bot","level":"info","message":"检测到踢下线，准备自动停止账号。原因: 已在其他终端登录","module":"system","tag":"系统","timestamp":"2026-03-13T20:57:19.644Z"}
+{"accountId":"3","accountName":"233","app":"qq-farm-bot","level":"info","message":"账号 233 被踢下线，已自动停止账号","module":"runtime","tag":"系统","timestamp":"2026-03-13T20:57:19.644Z"}
+{"accountId":"3","accountName":"233","app":"qq-farm-bot","level":"info","message":"触发下线提醒: 账号=233, 原因=kickout:已在其他终端登录","module":"runtime","reason":"kickout:已在其他终端登录","tag":"系统","timestamp":"2026-03-13T20:57:19.645Z"}
+{"accountId":"3","app":"qq-farm-bot","channel":"qmsg","level":"info","message":"下线提醒配置: 渠道=qmsg, 标题=账号下线提醒","module":"runtime","tag":"系统","timestamp":"2026-03-13T20:57:19.646Z","title":"账号下线提醒","username":"vv"}
+{"app":"qq-farm-bot","level":"error","message":"下线提醒发送失败: Request failed with status code 400","module":"runtime","tag":"错误","timestamp":"2026-03-13T20:57:19.817Z"}
+{"accountId":"3","accountName":"233","app":"qq-farm-bot","level":"info","message":"账号 233 进程退出 (code=1, signal=none)","module":"runtime","runtimeMode":"thread","tag":"系统","timestamp":"2026-03-13T20:57:20.661Z"}
+{"actions":["浇水1"],"app":"qq-farm-bot","event":"农场循环","level":"info","message":"[水:1 长:24] → 浇水1","module":"farm","opType":"all","tag":"农场","timestamp":"2026-03-13T20:57:21.135Z"}
+{"accountId":"3","accountName":"233","app":"qq-farm-bot","level":"info","message":"正在启动账号: 233","module":"runtime","tag":"系统","timestamp":"2026-03-13T20:58:11.330Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在加载 Protobuf 定义...","module":"system","tag":"系统","timestamp":"2026-03-13T20:58:11.507Z"}
+{"app":"qq-farm-bot","level":"info","message":"Protobuf 定义加载完成","module":"system","tag":"系统","timestamp":"2026-03-13T20:58:11.538Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在连接服务器...","module":"system","tag":"系统","timestamp":"2026-03-13T20:58:11.538Z"}
+{"app":"qq-farm-bot","level":"info","message":"登录成功: h (Lv30)","module":"system","tag":"系统","timestamp":"2026-03-13T20:58:22.930Z"}
+{"app":"qq-farm-bot","level":"info","message":"当前为 QQ 环境，跳过邀请码处理（仅微信支持）","module":"system","tag":"系统","timestamp":"2026-03-13T20:58:22.974Z"}
+{"accountId":"3","accountName":"233","app":"qq-farm-bot","level":"info","message":"已同步账号昵称: None -> h","module":"runtime","tag":"系统","timestamp":"2026-03-13T20:58:22.980Z"}
+{"app":"qq-farm-bot","event":"email_rewards","level":"info","message":"今日暂无可领取邮箱奖励","module":"task","result":"none","tag":"任务","timestamp":"2026-03-13T20:58:23.024Z"}
+{"app":"qq-farm-bot","event":"daily_share","level":"info","message":"今日分享奖励已领取","module":"task","result":"none","tag":"任务","timestamp":"2026-03-13T20:58:23.137Z"}
+{"app":"qq-farm-bot","event":"month_card_gift","level":"info","message":"今日暂无可领取月卡礼包","module":"task","result":"none","tag":"任务","timestamp":"2026-03-13T20:58:23.175Z"}
+{"app":"qq-farm-bot","event":"mall_free_gifts","level":"info","message":"本次未成功领取免费礼包","module":"task","result":"none","tag":"任务","timestamp":"2026-03-13T20:58:23.252Z"}
+{"app":"qq-farm-bot","event":"vip_daily_gift","level":"info","message":"今日暂无可领取会员礼包","module":"task","result":"none","tag":"任务","timestamp":"2026-03-13T20:58:23.290Z"}
+{"app":"qq-farm-bot","level":"info","message":"被踢下线! gatepb.KickoutNotify","module":"system","tag":"系统","timestamp":"2026-03-13T20:58:28.846Z"}
+{"app":"qq-farm-bot","level":"info","message":"原因: 已在其他终端登录","module":"system","tag":"系统","timestamp":"2026-03-13T20:58:28.846Z"}
+{"app":"qq-farm-bot","level":"info","message":"检测到踢下线，准备自动停止账号。原因: 已在其他终端登录","module":"system","tag":"系统","timestamp":"2026-03-13T20:58:28.846Z"}
+{"accountId":"1","accountName":"3473400","app":"qq-farm-bot","level":"info","message":"账号 3473400 被踢下线，已自动停止账号","module":"runtime","tag":"系统","timestamp":"2026-03-13T20:58:28.847Z"}
+{"accountId":"1","accountName":"3473400","app":"qq-farm-bot","level":"info","message":"触发下线提醒: 账号=3473400, 原因=kickout:已在其他终端登录","module":"runtime","reason":"kickout:已在其他终端登录","tag":"系统","timestamp":"2026-03-13T20:58:28.847Z"}
+{"accountId":"1","app":"qq-farm-bot","channel":"qmsg","level":"info","message":"下线提醒配置: 渠道=qmsg, 标题=账号下线提醒","module":"runtime","tag":"系统","timestamp":"2026-03-13T20:58:28.847Z","title":"账号下线提醒","username":"admin"}
+{"app":"qq-farm-bot","level":"info","message":"下线提醒发送成功: 3473400","module":"runtime","tag":"系统","timestamp":"2026-03-13T20:58:29.076Z"}
+{"accountId":"1","accountName":"3473400","app":"qq-farm-bot","level":"info","message":"账号 3473400 进程退出 (code=1, signal=none)","module":"runtime","runtimeMode":"thread","tag":"系统","timestamp":"2026-03-13T20:58:29.863Z"}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:58:34.110Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"Vullfin","index":1,"level":"info","message":"批量帮助第 1/1 个好友: Vullfin","module":"friend","tag":"好友","timestamp":"2026-03-13T20:58:34.110Z","total":1}
+{"actions":["草1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1030281574,"friendName":"Vullfin","level":"info","message":"Vullfin: 草1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:58:34.446Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"Vullfin","index":1,"level":"info","message":"批量帮助第 1 个好友完成: Vullfin","module":"friend","tag":"好友","timestamp":"2026-03-13T20:58:34.484Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:58:34.697Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除草1","module":"friend","result":"ok","summary":["除草1"],"tag":"好友","timestamp":"2026-03-13T20:58:34.697Z","visited":1}
+{"app":"qq-farm-bot","count":1,"event":"开始批量帮助","level":"info","message":"开始批量帮助，共 1 个好友需要帮助","module":"friend","tag":"好友","timestamp":"2026-03-13T20:58:49.366Z"}
+{"app":"qq-farm-bot","event":"批量帮助开始","friendName":"ㅤㅤ","index":1,"level":"info","message":"批量帮助第 1/1 个好友: ㅤㅤ","module":"friend","tag":"好友","timestamp":"2026-03-13T20:58:49.367Z","total":1}
+{"app":"qq-farm-bot","count":1,"event":"土地推送通知","level":"info","message":"收到推送: 1块土地变化，检查中...","module":"farm","result":"trigger_check","tag":"农场","timestamp":"2026-03-13T20:58:49.490Z"}
+{"actions":["草1"],"app":"qq-farm-bot","event":"help_friend","friendGid":1181938107,"friendName":"ㅤㅤ","level":"info","message":"ㅤㅤ: 草1","module":"friend","result":"ok","tag":"好友","timestamp":"2026-03-13T20:58:49.700Z"}
+{"app":"qq-farm-bot","event":"批量帮助完成","friendName":"ㅤㅤ","index":1,"level":"info","message":"批量帮助第 1 个好友完成: ㅤㅤ","module":"friend","tag":"好友","timestamp":"2026-03-13T20:58:49.736Z"}
+{"app":"qq-farm-bot","event":"批量帮助结束","level":"info","message":"批量帮助循环结束","module":"friend","tag":"好友","timestamp":"2026-03-13T20:58:49.950Z"}
+{"app":"qq-farm-bot","event":"好友巡查循环","level":"info","message":"巡查完成 → 除草1","module":"friend","result":"ok","summary":["除草1"],"tag":"好友","timestamp":"2026-03-13T20:58:49.950Z","visited":1}
+{"actions":["浇水1"],"app":"qq-farm-bot","event":"农场循环","level":"info","message":"[水:1 长:23] → 浇水1","module":"farm","opType":"all","tag":"农场","timestamp":"2026-03-13T20:58:55.703Z"}
+{"app":"qq-farm-bot","level":"info","message":"被踢下线! gatepb.KickoutNotify","module":"system","tag":"系统","timestamp":"2026-03-13T20:59:29.581Z"}
+{"app":"qq-farm-bot","level":"info","message":"原因: 已在其他终端登录","module":"system","tag":"系统","timestamp":"2026-03-13T20:59:29.582Z"}
+{"app":"qq-farm-bot","level":"info","message":"检测到踢下线，准备自动停止账号。原因: 已在其他终端登录","module":"system","tag":"系统","timestamp":"2026-03-13T20:59:29.582Z"}
+{"accountId":"3","accountName":"233","app":"qq-farm-bot","level":"info","message":"账号 233 被踢下线，已自动停止账号","module":"runtime","tag":"系统","timestamp":"2026-03-13T20:59:29.582Z"}
+{"accountId":"3","accountName":"233","app":"qq-farm-bot","level":"info","message":"触发下线提醒: 账号=233, 原因=kickout:已在其他终端登录","module":"runtime","reason":"kickout:已在其他终端登录","tag":"系统","timestamp":"2026-03-13T20:59:29.582Z"}
+{"accountId":"3","app":"qq-farm-bot","channel":"qmsg","level":"info","message":"下线提醒配置: 渠道=qmsg, 标题=账号下线提醒","module":"runtime","tag":"系统","timestamp":"2026-03-13T20:59:29.583Z","title":"账号下线提醒","username":"vv"}
+{"app":"qq-farm-bot","level":"error","message":"下线提醒发送失败: Request failed with status code 400","module":"runtime","tag":"错误","timestamp":"2026-03-13T20:59:29.770Z"}
+{"accountId":"3","accountName":"233","app":"qq-farm-bot","level":"info","message":"账号 233 进程退出 (code=1, signal=none)","module":"runtime","runtimeMode":"thread","tag":"系统","timestamp":"2026-03-13T20:59:30.595Z"}
+{"accountId":"3","accountName":"233","app":"qq-farm-bot","level":"info","message":"正在启动账号: 233","module":"runtime","tag":"系统","timestamp":"2026-03-13T21:00:09.424Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在加载 Protobuf 定义...","module":"system","tag":"系统","timestamp":"2026-03-13T21:00:09.598Z"}
+{"app":"qq-farm-bot","level":"info","message":"Protobuf 定义加载完成","module":"system","tag":"系统","timestamp":"2026-03-13T21:00:09.622Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在连接服务器...","module":"system","tag":"系统","timestamp":"2026-03-13T21:00:09.623Z"}
+{"app":"qq-farm-bot","level":"info","message":"登录成功: h (Lv30)","module":"system","tag":"系统","timestamp":"2026-03-13T21:00:09.934Z"}
+{"app":"qq-farm-bot","level":"info","message":"当前为 QQ 环境，跳过邀请码处理（仅微信支持）","module":"system","tag":"系统","timestamp":"2026-03-13T21:00:09.977Z"}
+{"accountId":"3","accountName":"233","app":"qq-farm-bot","level":"info","message":"已同步账号昵称: None -> h","module":"runtime","tag":"系统","timestamp":"2026-03-13T21:00:09.981Z"}
+{"app":"qq-farm-bot","event":"email_rewards","level":"info","message":"今日暂无可领取邮箱奖励","module":"task","result":"none","tag":"任务","timestamp":"2026-03-13T21:00:10.024Z"}
+{"app":"qq-farm-bot","event":"daily_share","level":"info","message":"今日分享奖励已领取","module":"task","result":"none","tag":"任务","timestamp":"2026-03-13T21:00:10.142Z"}
+{"app":"qq-farm-bot","event":"month_card_gift","level":"info","message":"今日暂无可领取月卡礼包","module":"task","result":"none","tag":"任务","timestamp":"2026-03-13T21:00:10.182Z"}
+{"app":"qq-farm-bot","event":"mall_free_gifts","level":"info","message":"本次未成功领取免费礼包","module":"task","result":"none","tag":"任务","timestamp":"2026-03-13T21:00:10.262Z"}
+{"app":"qq-farm-bot","event":"vip_daily_gift","level":"info","message":"今日暂无可领取会员礼包","module":"task","result":"none","tag":"任务","timestamp":"2026-03-13T21:00:10.301Z"}
+{"app":"qq-farm-bot","level":"info","message":"被踢下线! gatepb.KickoutNotify","module":"system","tag":"系统","timestamp":"2026-03-13T21:00:30.120Z"}
+{"accountId":"3","accountName":"233","app":"qq-farm-bot","level":"info","message":"账号 233 被踢下线，已自动停止账号","module":"runtime","tag":"系统","timestamp":"2026-03-13T21:00:30.121Z"}
+{"app":"qq-farm-bot","level":"info","message":"原因: 已在其他终端登录","module":"system","tag":"系统","timestamp":"2026-03-13T21:00:30.121Z"}
+{"app":"qq-farm-bot","level":"info","message":"检测到踢下线，准备自动停止账号。原因: 已在其他终端登录","module":"system","tag":"系统","timestamp":"2026-03-13T21:00:30.121Z"}
+{"accountId":"3","accountName":"233","app":"qq-farm-bot","level":"info","message":"触发下线提醒: 账号=233, 原因=kickout:已在其他终端登录","module":"runtime","reason":"kickout:已在其他终端登录","tag":"系统","timestamp":"2026-03-13T21:00:30.122Z"}
+{"accountId":"3","app":"qq-farm-bot","channel":"qmsg","level":"info","message":"下线提醒配置: 渠道=qmsg, 标题=账号下线提醒","module":"runtime","tag":"系统","timestamp":"2026-03-13T21:00:30.122Z","title":"账号下线提醒","username":"vv"}
+{"app":"qq-farm-bot","level":"info","message":"下线提醒发送成功: 233","module":"runtime","tag":"系统","timestamp":"2026-03-13T21:00:30.357Z"}
+{"accountId":"3","accountName":"233","app":"qq-farm-bot","level":"info","message":"账号 233 进程退出 (code=1, signal=none)","module":"runtime","runtimeMode":"thread","tag":"系统","timestamp":"2026-03-13T21:00:31.133Z"}
+{"app":"qq-farm-bot","level":"info","message":"发现 3 个账号，正在启动...","module":"runtime","tag":"系统","timestamp":"2026-03-13T21:07:13.313Z"}
+{"accountId":"1","accountName":"3473400","app":"qq-farm-bot","level":"info","message":"正在启动账号: 3473400","module":"runtime","tag":"系统","timestamp":"2026-03-13T21:07:13.314Z"}
+{"accountId":"2","accountName":"171761515","app":"qq-farm-bot","level":"info","message":"正在启动账号: 171761515","module":"runtime","tag":"系统","timestamp":"2026-03-13T21:07:13.317Z"}
+{"accountId":"3","accountName":"233","app":"qq-farm-bot","level":"info","message":"正在启动账号: 233","module":"runtime","tag":"系统","timestamp":"2026-03-13T21:07:13.319Z"}
+{"app":"qq-farm-bot","level":"info","message":"admin panel started","module":"admin","port":3007,"timestamp":"2026-03-13T21:07:13.326Z","url":"http://localhost:3007"}
+{"app":"qq-farm-bot","level":"info","message":"正在加载 Protobuf 定义...","module":"system","tag":"系统","timestamp":"2026-03-13T21:07:13.488Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在加载 Protobuf 定义...","module":"system","tag":"系统","timestamp":"2026-03-13T21:07:13.488Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在加载 Protobuf 定义...","module":"system","tag":"系统","timestamp":"2026-03-13T21:07:13.489Z"}
+{"app":"qq-farm-bot","level":"info","message":"Protobuf 定义加载完成","module":"system","tag":"系统","timestamp":"2026-03-13T21:07:13.513Z"}
+{"app":"qq-farm-bot","level":"info","message":"Protobuf 定义加载完成","module":"system","tag":"系统","timestamp":"2026-03-13T21:07:13.514Z"}
+{"app":"qq-farm-bot","level":"info","message":"Protobuf 定义加载完成","module":"system","tag":"系统","timestamp":"2026-03-13T21:07:13.515Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在连接服务器...","module":"system","tag":"系统","timestamp":"2026-03-13T21:07:13.514Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在连接服务器...","module":"system","tag":"系统","timestamp":"2026-03-13T21:07:13.514Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在连接服务器...","module":"system","tag":"系统","timestamp":"2026-03-13T21:07:13.515Z"}
+{"app":"qq-farm-bot","level":"warn","message":"[WS] 错误: Unexpected server response: 400","module":"system","tag":"系统","timestamp":"2026-03-13T21:07:13.778Z"}
+{"app":"qq-farm-bot","level":"info","message":"连接被拒绝，可能需要更新 Code","module":"system","tag":"系统","timestamp":"2026-03-13T21:07:13.779Z"}
+{"app":"qq-farm-bot","level":"warn","message":"[WS] 错误: Unexpected server response: 400","module":"system","tag":"系统","timestamp":"2026-03-13T21:07:13.784Z"}
+{"app":"qq-farm-bot","level":"info","message":"连接被拒绝，可能需要更新 Code","module":"system","tag":"系统","timestamp":"2026-03-13T21:07:13.784Z"}
+{"app":"qq-farm-bot","level":"warn","message":"[WS] 错误: Unexpected server response: 400","module":"system","tag":"系统","timestamp":"2026-03-13T21:07:13.849Z"}
+{"app":"qq-farm-bot","level":"info","message":"连接被拒绝，可能需要更新 Code","module":"system","tag":"系统","timestamp":"2026-03-13T21:07:13.849Z"}
+{"app":"qq-farm-bot","level":"info","message":"发现 3 个账号，正在启动...","module":"runtime","tag":"系统","timestamp":"2026-03-13T21:09:53.410Z"}
+{"accountId":"1","accountName":"3473400","app":"qq-farm-bot","level":"info","message":"正在启动账号: 3473400","module":"runtime","tag":"系统","timestamp":"2026-03-13T21:09:53.411Z"}
+{"accountId":"2","accountName":"171761515","app":"qq-farm-bot","level":"info","message":"正在启动账号: 171761515","module":"runtime","tag":"系统","timestamp":"2026-03-13T21:09:53.414Z"}
+{"accountId":"3","accountName":"233","app":"qq-farm-bot","level":"info","message":"正在启动账号: 233","module":"runtime","tag":"系统","timestamp":"2026-03-13T21:09:53.416Z"}
+{"app":"qq-farm-bot","level":"info","message":"admin panel started","module":"admin","port":3007,"timestamp":"2026-03-13T21:09:53.422Z","url":"http://localhost:3007"}
+{"app":"qq-farm-bot","level":"info","message":"正在加载 Protobuf 定义...","module":"system","tag":"系统","timestamp":"2026-03-13T21:09:53.578Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在加载 Protobuf 定义...","module":"system","tag":"系统","timestamp":"2026-03-13T21:09:53.578Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在加载 Protobuf 定义...","module":"system","tag":"系统","timestamp":"2026-03-13T21:09:53.579Z"}
+{"app":"qq-farm-bot","level":"info","message":"Protobuf 定义加载完成","module":"system","tag":"系统","timestamp":"2026-03-13T21:09:53.604Z"}
+{"app":"qq-farm-bot","level":"info","message":"Protobuf 定义加载完成","module":"system","tag":"系统","timestamp":"2026-03-13T21:09:53.604Z"}
+{"app":"qq-farm-bot","level":"info","message":"Protobuf 定义加载完成","module":"system","tag":"系统","timestamp":"2026-03-13T21:09:53.605Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在连接服务器...","module":"system","tag":"系统","timestamp":"2026-03-13T21:09:53.605Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在连接服务器...","module":"system","tag":"系统","timestamp":"2026-03-13T21:09:53.604Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在连接服务器...","module":"system","tag":"系统","timestamp":"2026-03-13T21:09:53.605Z"}
+{"app":"qq-farm-bot","level":"warn","message":"[WS] 错误: Unexpected server response: 400","module":"system","tag":"系统","timestamp":"2026-03-13T21:09:53.882Z"}
+{"app":"qq-farm-bot","level":"info","message":"连接被拒绝，可能需要更新 Code","module":"system","tag":"系统","timestamp":"2026-03-13T21:09:53.882Z"}
+{"app":"qq-farm-bot","level":"warn","message":"[WS] 错误: Unexpected server response: 400","module":"system","tag":"系统","timestamp":"2026-03-13T21:09:53.927Z"}
+{"app":"qq-farm-bot","level":"warn","message":"[WS] 错误: Unexpected server response: 400","module":"system","tag":"系统","timestamp":"2026-03-13T21:09:53.928Z"}
+{"app":"qq-farm-bot","level":"info","message":"连接被拒绝，可能需要更新 Code","module":"system","tag":"系统","timestamp":"2026-03-13T21:09:53.927Z"}
+{"app":"qq-farm-bot","level":"info","message":"连接被拒绝，可能需要更新 Code","module":"system","tag":"系统","timestamp":"2026-03-13T21:09:53.928Z"}
+{"app":"qq-farm-bot","level":"info","message":"发现 3 个账号，正在启动...","module":"runtime","tag":"系统","timestamp":"2026-03-13T21:24:41.947Z"}
+{"accountId":"1","accountName":"3473400","app":"qq-farm-bot","level":"info","message":"正在启动账号: 3473400","module":"runtime","tag":"系统","timestamp":"2026-03-13T21:24:41.948Z"}
+{"accountId":"2","accountName":"171761515","app":"qq-farm-bot","level":"info","message":"正在启动账号: 171761515","module":"runtime","tag":"系统","timestamp":"2026-03-13T21:24:41.951Z"}
+{"accountId":"3","accountName":"233","app":"qq-farm-bot","level":"info","message":"正在启动账号: 233","module":"runtime","tag":"系统","timestamp":"2026-03-13T21:24:41.953Z"}
+{"app":"qq-farm-bot","level":"info","message":"admin panel started","module":"admin","port":3007,"timestamp":"2026-03-13T21:24:41.959Z","url":"http://localhost:3007"}
+{"app":"qq-farm-bot","level":"info","message":"正在加载 Protobuf 定义...","module":"system","tag":"系统","timestamp":"2026-03-13T21:24:42.115Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在加载 Protobuf 定义...","module":"system","tag":"系统","timestamp":"2026-03-13T21:24:42.115Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在加载 Protobuf 定义...","module":"system","tag":"系统","timestamp":"2026-03-13T21:24:42.116Z"}
+{"app":"qq-farm-bot","level":"info","message":"Protobuf 定义加载完成","module":"system","tag":"系统","timestamp":"2026-03-13T21:24:42.141Z"}
+{"app":"qq-farm-bot","level":"info","message":"Protobuf 定义加载完成","module":"system","tag":"系统","timestamp":"2026-03-13T21:24:42.143Z"}
+{"app":"qq-farm-bot","level":"info","message":"Protobuf 定义加载完成","module":"system","tag":"系统","timestamp":"2026-03-13T21:24:42.145Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在连接服务器...","module":"system","tag":"系统","timestamp":"2026-03-13T21:24:42.141Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在连接服务器...","module":"system","tag":"系统","timestamp":"2026-03-13T21:24:42.145Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在连接服务器...","module":"system","tag":"系统","timestamp":"2026-03-13T21:24:42.144Z"}
+{"app":"qq-farm-bot","level":"warn","message":"[WS] 错误: Unexpected server response: 400","module":"system","tag":"系统","timestamp":"2026-03-13T21:24:42.430Z"}
+{"app":"qq-farm-bot","level":"info","message":"连接被拒绝，可能需要更新 Code","module":"system","tag":"系统","timestamp":"2026-03-13T21:24:42.431Z"}
+{"app":"qq-farm-bot","level":"warn","message":"[WS] 错误: Unexpected server response: 400","module":"system","tag":"系统","timestamp":"2026-03-13T21:24:42.432Z"}
+{"app":"qq-farm-bot","level":"info","message":"连接被拒绝，可能需要更新 Code","module":"system","tag":"系统","timestamp":"2026-03-13T21:24:42.433Z"}
+{"app":"qq-farm-bot","level":"warn","message":"[WS] 错误: Unexpected server response: 400","module":"system","tag":"系统","timestamp":"2026-03-13T21:24:42.438Z"}
+{"app":"qq-farm-bot","level":"info","message":"连接被拒绝，可能需要更新 Code","module":"system","tag":"系统","timestamp":"2026-03-13T21:24:42.439Z"}

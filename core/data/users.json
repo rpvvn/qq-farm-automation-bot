@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "password": "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",
+      "plainPassword": "admin",
+      "role": "admin",
+      "createdAt": 1773434494803
+    },
+    {
+      "username": "vv",
+      "password": "fc47d240fe0c59b5dd8c70cca993c54596cde2de69a05f81e3828fdc6d1a4cef",
+      "plainPassword": "vv",
+      "role": "user",
+      "cardCode": "D7W05YQPD6XD4AFA",
+      "card": {
+        "code": "D7W05YQPD6XD4AFA",
+        "description": "月卡",
+        "days": 30,
+        "expiresAt": 1776026857819,
+        "enabled": true
+      },
+      "accountLimit": 1,
+      "createdAt": 1773434857819
+    }
+  ]
+}

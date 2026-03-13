@@ -19,6 +19,18 @@ const CONFIG = {
     adminPassword: process.env.ADMIN_PASSWORD,
 };
 
+// 默认连接配置（用于前端配置界面）
+const DEFAULT_CONNECTION_CONFIG = {
+    serverUrl: 'wss://gate-obt.nqf.qq.com/prod/ws',
+    clientVersion: '1.7.0.6_20260313',
+    platform: 'qq',
+    os: 'iOS',
+    sysSoftware: 'iOS 26.2.1',
+    network: 'wifi',
+    memory: '7672',
+    deviceId: 'iPhone X<iPhone18,3>',
+};
+
 // 生长阶段枚举
 const PlantPhase = {
     UNKNOWN: 0,
@@ -33,4 +45,4 @@ const PlantPhase = {
 
 const PHASE_NAMES = ['未知', '种子', '发芽', '小叶', '大叶', '开花', '成熟', '枯死'];
 
-module.exports = { CONFIG, PlantPhase, PHASE_NAMES };
+module.exports = { CONFIG, DEFAULT_CONNECTION_CONFIG, PlantPhase, PHASE_NAMES };

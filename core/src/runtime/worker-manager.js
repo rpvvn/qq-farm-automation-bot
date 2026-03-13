@@ -231,7 +231,7 @@ function createWorkerManager(options) {
                 const now = Date.now();
                 if (!worker.disconnectedSince) worker.disconnectedSince = now;
                 const offlineMs = now - worker.disconnectedSince;
-                const autoDeleteMs = getOfflineAutoDeleteMs(worker.username);
+                const autoDeleteMs = getOfflineAutoDeleteMs(accountId, worker.username);
                 if (!worker.autoDeleteTriggered && offlineMs >= autoDeleteMs) {
                     worker.autoDeleteTriggered = true;
                     const offlineMin = Math.floor(offlineMs / 60000);

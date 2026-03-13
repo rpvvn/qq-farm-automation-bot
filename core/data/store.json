@@ -1,0 +1,291 @@
+{
+  "accountConfigs": {
+    "1": {
+      "automation": {
+        "farm": true,
+        "farm_push": true,
+        "land_upgrade": false,
+        "friend": true,
+        "friend_help_exp_limit": true,
+        "friend_steal": true,
+        "friend_help": true,
+        "friend_bad": false,
+        "task": true,
+        "fertilizer_gift": false,
+        "fertilizer_buy": false,
+        "sell": false,
+        "fertilizer": "smart",
+        "fertilizer_multi_season": true,
+        "fertilizer_land_types": [
+          "gold",
+          "black",
+          "red",
+          "normal"
+        ],
+        "fertilizer_smart_seconds": 300,
+        "skip_own_weed_bug": true
+      },
+      "plantingStrategy": "max_exp",
+      "preferredSeedId": 0,
+      "intervals": {
+        "farm": 2,
+        "farmMin": 5,
+        "farmMax": 10,
+        "helpMin": 10,
+        "helpMax": 15,
+        "stealMin": 10,
+        "stealMax": 15
+      },
+      "friendQuietHours": {
+        "enabled": false,
+        "start": "23:00",
+        "end": "07:00"
+      },
+      "knownFriendGids": [],
+      "knownFriendGidSyncCooldownSec": 300,
+      "friendBlacklist": [],
+      "plantBlacklist": [
+        20002,
+        20003,
+        20059,
+        20065,
+        20064,
+        20060,
+        20061
+      ],
+      "stealDelaySeconds": 1,
+      "plantOrderRandom": true,
+      "plantDelaySeconds": 2,
+      "fertilizerBuyType": "normal",
+      "fertilizerBuyCount": 10,
+      "bagSeedPriority": [],
+      "bagSeedFallbackStrategy": "level",
+      "offlineReminder": null
+    },
+    "2": {
+      "automation": {
+        "farm": true,
+        "farm_push": true,
+        "land_upgrade": false,
+        "friend": true,
+        "friend_help_exp_limit": true,
+        "friend_steal": true,
+        "friend_help": true,
+        "friend_bad": false,
+        "task": true,
+        "fertilizer_gift": false,
+        "fertilizer_buy": false,
+        "sell": false,
+        "fertilizer": "smart",
+        "fertilizer_multi_season": true,
+        "fertilizer_land_types": [
+          "gold",
+          "black",
+          "red",
+          "normal"
+        ],
+        "fertilizer_smart_seconds": 300,
+        "skip_own_weed_bug": true
+      },
+      "plantingStrategy": "max_exp",
+      "preferredSeedId": 0,
+      "intervals": {
+        "farm": 2,
+        "farmMin": 5,
+        "farmMax": 10,
+        "helpMin": 10,
+        "helpMax": 15,
+        "stealMin": 10,
+        "stealMax": 15
+      },
+      "friendQuietHours": {
+        "enabled": false,
+        "start": "23:00",
+        "end": "07:00"
+      },
+      "knownFriendGids": [],
+      "knownFriendGidSyncCooldownSec": 300,
+      "friendBlacklist": [],
+      "plantBlacklist": [
+        20002,
+        20003,
+        20059,
+        20065,
+        20064,
+        20060,
+        20061
+      ],
+      "stealDelaySeconds": 1,
+      "plantOrderRandom": true,
+      "plantDelaySeconds": 2,
+      "fertilizerBuyType": "normal",
+      "fertilizerBuyCount": 10,
+      "bagSeedPriority": [],
+      "bagSeedFallbackStrategy": "level",
+      "offlineReminder": null
+    },
+    "3": {
+      "automation": {
+        "farm": true,
+        "farm_push": true,
+        "land_upgrade": false,
+        "friend": true,
+        "friend_help_exp_limit": true,
+        "friend_steal": true,
+        "friend_help": true,
+        "friend_bad": false,
+        "task": true,
+        "fertilizer_gift": false,
+        "fertilizer_buy": false,
+        "sell": false,
+        "fertilizer": "smart",
+        "fertilizer_multi_season": true,
+        "fertilizer_land_types": [
+          "gold",
+          "black",
+          "red",
+          "normal"
+        ],
+        "fertilizer_smart_seconds": 300,
+        "skip_own_weed_bug": true
+      },
+      "plantingStrategy": "max_exp",
+      "preferredSeedId": 0,
+      "intervals": {
+        "farm": 2,
+        "farmMin": 5,
+        "farmMax": 10,
+        "helpMin": 10,
+        "helpMax": 15,
+        "stealMin": 10,
+        "stealMax": 15
+      },
+      "friendQuietHours": {
+        "enabled": false,
+        "start": "23:00",
+        "end": "07:00"
+      },
+      "knownFriendGids": [],
+      "knownFriendGidSyncCooldownSec": 300,
+      "friendBlacklist": [],
+      "plantBlacklist": [
+        20002,
+        20003,
+        20059,
+        20065,
+        20064,
+        20060,
+        20061
+      ],
+      "stealDelaySeconds": 1,
+      "plantOrderRandom": true,
+      "plantDelaySeconds": 2,
+      "fertilizerBuyType": "normal",
+      "fertilizerBuyCount": 10,
+      "bagSeedPriority": [],
+      "bagSeedFallbackStrategy": "level",
+      "offlineReminder": null
+    }
+  },
+  "defaultAccountConfig": {
+    "automation": {
+      "farm": true,
+      "farm_push": true,
+      "land_upgrade": false,
+      "friend": true,
+      "friend_help_exp_limit": true,
+      "friend_steal": true,
+      "friend_help": true,
+      "friend_bad": false,
+      "task": true,
+      "fertilizer_gift": false,
+      "fertilizer_buy": false,
+      "sell": false,
+      "fertilizer": "smart",
+      "fertilizer_multi_season": true,
+      "fertilizer_land_types": [
+        "gold",
+        "black",
+        "red",
+        "normal"
+      ],
+      "fertilizer_smart_seconds": 300,
+      "skip_own_weed_bug": true
+    },
+    "plantingStrategy": "max_exp",
+    "preferredSeedId": 0,
+    "intervals": {
+      "farm": 2,
+      "farmMin": 5,
+      "farmMax": 10,
+      "helpMin": 10,
+      "helpMax": 15,
+      "stealMin": 10,
+      "stealMax": 15
+    },
+    "friendQuietHours": {
+      "enabled": false,
+      "start": "23:00",
+      "end": "07:00"
+    },
+    "knownFriendGids": [],
+    "knownFriendGidSyncCooldownSec": 300,
+    "friendBlacklist": [],
+    "plantBlacklist": [
+      20002,
+      20003,
+      20059,
+      20065,
+      20064,
+      20060,
+      20061
+    ],
+    "stealDelaySeconds": 1,
+    "plantOrderRandom": true,
+    "plantDelaySeconds": 2,
+    "fertilizerBuyType": "normal",
+    "fertilizerBuyCount": 10,
+    "bagSeedPriority": [],
+    "bagSeedFallbackStrategy": "level",
+    "offlineReminder": null
+  },
+  "ui": {
+    "theme": "light"
+  },
+  "offlineReminder": {
+    "channel": "webhook",
+    "reloginUrlMode": "none",
+    "endpoint": "",
+    "token": "",
+    "title": "账号下线提醒",
+    "msg": "账号下线",
+    "offlineDeleteSec": 0
+  },
+  "userOfflineReminders": {
+    "admin": {
+      "channel": "qmsg",
+      "reloginUrlMode": "none",
+      "endpoint": "",
+      "token": "e4c49ffca65c0995e41f02975fbf294c",
+      "title": "账号下线提醒",
+      "msg": "账号下线",
+      "offlineDeleteSec": 0
+    },
+    "vv": {
+      "channel": "qmsg",
+      "reloginUrlMode": "none",
+      "endpoint": "",
+      "token": "b82f89a865cfbc9195e9b55e7264524d",
+      "title": "账号下线提醒",
+      "msg": "账号下线",
+      "offlineDeleteSec": 0
+    }
+  },
+  "adminPasswordHash": "",
+  "announcement": {
+    "content": "",
+    "showOnce": true,
+    "updatedAt": 0
+  },
+  "announcementReadRecords": {}
+}

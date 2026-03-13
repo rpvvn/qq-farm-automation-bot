@@ -61,6 +61,8 @@ export interface SettingsState {
   automation: AutomationConfig
   ui: UIConfig
   offlineReminder: OfflineConfig
+  accountOfflineReminder: OfflineConfig | null
+  useGlobalOfflineReminder: boolean
   stealDelaySeconds: number
   plantOrderRandom: boolean
   plantDelaySeconds: number
@@ -87,6 +89,8 @@ export const useSettingStore = defineStore('setting', () => {
       msg: '账号下线',
       offlineDeleteSec: 0,
     },
+    accountOfflineReminder: null,
+    useGlobalOfflineReminder: true,
     stealDelaySeconds: 0,
     plantOrderRandom: false,
     plantDelaySeconds: 0,
@@ -127,6 +131,7 @@ export const useSettingStore = defineStore('setting', () => {
         settings.value.fertilizerBuyCount = d.fertilizerBuyCount ?? 0
         settings.value.bagSeedPriority = d.bagSeedPriority ?? []
         settings.value.bagSeedFallbackStrategy = d.bagSeedFallbackStrategy ?? 'level'
+        settings.value.useGlobalOfflineReminder = d.useGlobalOfflineReminder ?? true
       }
     }
     finally {
@@ -186,5 +191,68 @@ export const useSettingStore = defineStore('setting', () => {
     }
   }
 
-  return { settings, loading, fetchSettings, saveSettings, saveOfflineConfig }
+  async function fetchAccountOfflineReminder(accountId: string) {
+    if (!accountId)
+      return
+    loading.value = true
+    try {
+      const { data } = await api.get('/api/settings/account-offline-reminder', {
+        headers: { 'x-account-id': accountId },
+      })
+      if (data && data.ok) {
+        settings.value.accountOfflineReminder = data.data
+      }
+    }
+    finally {
+      loading.value = false
+    }
+  }
+
+  async function saveAccountOfflineReminder(accountId: string, config: OfflineConfig | null) {
+    if (!accountId)
+      return { ok: false, error: '未选择账号' }
+    loading.value = true
+    try {
+      const { data } = await api.post('/api/settings/account-offline-reminder', config, {
+        headers: { 'x-account-id': accountId },
+      })
+      if (data && data.ok) {
+        settings.value.accountOfflineReminder = data.data
+        return { ok: true }
+      }
+      return { ok: false, error: '保存失败' }
+    }
+    finally {
+      loading.value = false
+    }
+  }
+
+  async function testAccountOfflineReminder(accountId: string, config: OfflineConfig) {
+    if (!accountId)
+      return { success: false, message: '未选择账号' }
+    loading.value = true
+    try {
+      const { data } = await api.post('/api/settings/account-offline-reminder/test', config, {
+        headers: { 'x-account-id': accountId },
+      })
+      if (data && data.ok && data.data) {
+        return { success: data.data.success, message: data.data.message }
+      }
+      return { success: false, message: data?.error || '测试失败' }
+    }
+    finally {
+      loading.value = false
+    }
+  }
+
+  return {
+    settings,
+    loading,
+    fetchSettings,
+    saveSettings,
+    saveOfflineConfig,
+    fetchAccountOfflineReminder,
+    saveAccountOfflineReminder,
+    testAccountOfflineReminder,
+  }
 })

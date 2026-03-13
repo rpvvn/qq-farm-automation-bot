@@ -181,6 +181,8 @@ const DEFAULT_ACCOUNT_CONFIG = {
     bagSeedPriority: [],
     // 背包种子用完后的回退策略
     bagSeedFallbackStrategy: 'level',
+    // 账号级别的下线提醒配置（null 表示使用上级配置）
+    offlineReminder: null,
 };
 const ALLOWED_AUTOMATION_KEYS = new Set(Object.keys(DEFAULT_ACCOUNT_CONFIG.automation));
 
@@ -212,6 +214,8 @@ const globalConfig = {
     },
     // 用户已读公告记录: { [username]: updatedAt }
     announcementReadRecords: {},
+    // 运行连接配置
+    connectionConfig: null,
 };
 
 function normalizeOfflineReminder(input) {
@@ -317,6 +321,7 @@ function cloneAccountConfig(base = DEFAULT_ACCOUNT_CONFIG) {
         fertilizerBuyCount: Math.max(0, Math.min(10000, Number(base.fertilizerBuyCount) || 0)),
         bagSeedPriority: normalizeBagSeedPriority(base.bagSeedPriority),
         bagSeedFallbackStrategy: normalizeBagSeedFallbackStrategy(base.bagSeedFallbackStrategy),
+        offlineReminder: base.offlineReminder ? normalizeOfflineReminder(base.offlineReminder) : null,
     };
 }
 
@@ -430,6 +435,15 @@ function normalizeAccountConfig(input, fallback = accountFallbackConfig) {
         cfg.bagSeedFallbackStrategy = normalizeBagSeedFallbackStrategy(src.bagSeedFallbackStrategy);
     }
 
+    // 账号级别的下线提醒配置
+    if (src.offlineReminder !== undefined) {
+        if (src.offlineReminder === null) {
+            cfg.offlineReminder = null;
+        } else {
+            cfg.offlineReminder = normalizeOfflineReminder(src.offlineReminder);
+        }
+    }
+
     return cfg;
 }
 
@@ -534,6 +548,11 @@ function loadGlobalConfig() {
             // 加载公告已读记录
             if (data.announcementReadRecords && typeof data.announcementReadRecords === 'object') {
                 globalConfig.announcementReadRecords = { ...data.announcementReadRecords };
+            }
+
+            // 加载运行连接配置
+            if (data.connectionConfig && typeof data.connectionConfig === 'object') {
+                globalConfig.connectionConfig = normalizeConnectionConfig(data.connectionConfig);
             }
         }
     } catch (e) {
@@ -979,6 +998,65 @@ function deleteUserOfflineReminder(username) {
     }
 }
 
+// ============ 账号级别的下线提醒配置 ============
+/**
+ * 获取账号级别的下线提醒配置
+ * @param {string} accountId - 账号 ID
+ * @returns {object|null} 配置对象或 null
+ */
+function getAccountOfflineReminder(accountId) {
+    const id = resolveAccountId(accountId);
+    if (!id) return null;
+    const cfg = globalConfig.accountConfigs[id];
+    if (!cfg || cfg.offlineReminder === undefined) return null;
+    return cfg.offlineReminder;
+}
+
+/**
+ * 设置账号级别的下线提醒配置
+ * @param {string} accountId - 账号 ID
+ * @param {object|null} cfg - 配置对象，null 表示删除配置
+ * @returns {object|null} 保存后的配置
+ */
+function setAccountOfflineReminder(accountId, cfg) {
+    const id = resolveAccountId(accountId);
+    if (!id) return null;
+    
+    ensureAccountConfig(id, { persist: false });
+    
+    if (cfg === null || cfg === undefined) {
+        globalConfig.accountConfigs[id].offlineReminder = null;
+    } else {
+        globalConfig.accountConfigs[id].offlineReminder = normalizeOfflineReminder(cfg);
+    }
+    
+    saveGlobalConfig();
+    return globalConfig.accountConfigs[id].offlineReminder;
+}
+
+/**
+ * 获取有效的下线提醒配置（按优先级查找）
+ * @param {string} accountId - 账号 ID
+ * @param {string} username - 用户名
+ * @returns {object} 有效的配置对象
+ */
+function getEffectiveOfflineReminder(accountId, username) {
+    // 1. 检查账号级别配置
+    const accountCfg = getAccountOfflineReminder(accountId);
+    if (accountCfg) return accountCfg;
+    
+    // 2. 检查用户级别配置
+    if (username) {
+        const userCfg = getOfflineReminder(username);
+        if (userCfg && globalConfig.userOfflineReminders && globalConfig.userOfflineReminders[username]) {
+            return userCfg;
+        }
+    }
+    
+    // 3. 返回全局配置
+    return normalizeOfflineReminder(globalConfig.offlineReminder);
+}
+
 // ============ 账号管理 ============
 function loadAccounts() {
     ensureDataDir();
@@ -1129,6 +1207,40 @@ function shouldShowAnnouncement(username) {
     return readAt < announcement.updatedAt;
 }
 
+// ============ 运行连接配置 ============
+function normalizeConnectionConfig(input) {
+    const { DEFAULT_CONNECTION_CONFIG } = require('../config/config');
+    const src = (input && typeof input === 'object') ? input : {};
+    return {
+        serverUrl: String(src.serverUrl || DEFAULT_CONNECTION_CONFIG.serverUrl).trim(),
+        clientVersion: String(src.clientVersion || DEFAULT_CONNECTION_CONFIG.clientVersion).trim(),
+        platform: String(src.platform || DEFAULT_CONNECTION_CONFIG.platform).trim(),
+        os: String(src.os || DEFAULT_CONNECTION_CONFIG.os).trim(),
+        sysSoftware: String(src.sysSoftware || DEFAULT_CONNECTION_CONFIG.sysSoftware).trim(),
+        network: String(src.network || DEFAULT_CONNECTION_CONFIG.network).trim(),
+        memory: String(src.memory || DEFAULT_CONNECTION_CONFIG.memory).trim(),
+        deviceId: String(src.deviceId || DEFAULT_CONNECTION_CONFIG.deviceId).trim(),
+    };
+}
+
+function getConnectionConfig() {
+    const { DEFAULT_CONNECTION_CONFIG } = require('../config/config');
+    if (!globalConfig.connectionConfig) {
+        return { ...DEFAULT_CONNECTION_CONFIG };
+    }
+    return { ...globalConfig.connectionConfig };
+}
+
+function saveConnectionConfig(config) {
+    globalConfig.connectionConfig = normalizeConnectionConfig(config);
+    saveGlobalConfig();
+}
+
+function resetConnectionConfig() {
+    globalConfig.connectionConfig = null;
+    saveGlobalConfig();
+}
+
 module.exports = {
     getConfigSnapshot,
     applyConfigSnapshot,
@@ -1158,6 +1270,9 @@ module.exports = {
     getOfflineReminder,
     setOfflineReminder,
     deleteUserOfflineReminder,
+    getAccountOfflineReminder,
+    setAccountOfflineReminder,
+    getEffectiveOfflineReminder,
     getAccounts,
     addOrUpdateAccount,
     deleteAccount,
@@ -1178,4 +1293,8 @@ module.exports = {
     getAnnouncementReadRecord,
     markAnnouncementRead,
     shouldShowAnnouncement,
+    // 运行连接配置
+    getConnectionConfig,
+    saveConnectionConfig,
+    resetConnectionConfig,
 };

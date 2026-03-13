@@ -1328,7 +1328,10 @@ function startAdminServer(dataProvider) {
             const offlineReminder = store.getOfflineReminder && currentUser
                 ? store.getOfflineReminder(currentUser.username)
                 : { channel: 'webhook', reloginUrlMode: 'none', endpoint: '', token: '', title: '账号下线提醒', msg: '账号下线', offlineDeleteSec: 0 };
-            res.json({ ok: true, data: { intervals, strategy, preferredSeed, friendQuietHours, automation, stealDelaySeconds, plantOrderRandom, plantDelaySeconds, fertilizerBuyType, fertilizerBuyCount, bagSeedPriority, bagSeedFallbackStrategy, ui, offlineReminder } });
+            // 检查是否使用全局配置（用户级别配置是否存在）
+            const useGlobalOfflineReminder = !offlineReminder || 
+                JSON.stringify(offlineReminder) === JSON.stringify({ channel: 'webhook', reloginUrlMode: 'none', endpoint: '', token: '', title: '账号下线提醒', msg: '账号下线', offlineDeleteSec: 0 });
+            res.json({ ok: true, data: { intervals, strategy, preferredSeed, friendQuietHours, automation, stealDelaySeconds, plantOrderRandom, plantDelaySeconds, fertilizerBuyType, fertilizerBuyCount, bagSeedPriority, bagSeedFallbackStrategy, ui, offlineReminder, useGlobalOfflineReminder } });
         } catch (e) {
             res.status(500).json({ ok: false, error: e.message });
         }
@@ -1342,6 +1345,146 @@ function startAdminServer(dataProvider) {
                 return res.status(500).json({ ok: false, error: '无法获取默认配置' });
             }
             res.json({ ok: true, data: defaultConfig });
+        } catch (e) {
+            res.status(500).json({ ok: false, error: e.message });
+        }
+    });
+
+    // ============ 运行连接配置 API ============
+    // 获取连接配置
+    app.get('/api/settings/connection', authRequired, (req, res) => {
+        try {
+            const config = store.getConnectionConfig ? store.getConnectionConfig() : null;
+            if (!config) {
+                return res.status(500).json({ ok: false, error: '无法获取连接配置' });
+            }
+            res.json({ ok: true, data: config });
+        } catch (e) {
+            res.status(500).json({ ok: false, error: e.message });
+        }
+    });
+
+    // 保存连接配置
+    app.post('/api/settings/connection', authRequired, (req, res) => {
+        try {
+            const body = (req.body && typeof req.body === 'object') ? req.body : {};
+            const config = {
+                serverUrl: String(body.serverUrl || '').trim(),
+                clientVersion: String(body.clientVersion || '').trim(),
+                platform: String(body.platform || 'qq').trim(),
+                os: String(body.os || 'iOS').trim(),
+                sysSoftware: String(body.sysSoftware || '').trim(),
+                network: String(body.network || 'wifi').trim(),
+                memory: String(body.memory || '').trim(),
+                deviceId: String(body.deviceId || '').trim(),
+            };
+
+            if (store.saveConnectionConfig) {
+                store.saveConnectionConfig(config);
+            }
+
+            res.json({ ok: true });
+        } catch (e) {
+            res.status(500).json({ ok: false, error: e.message });
+        }
+    });
+
+    // 恢复默认连接配置
+    app.post('/api/settings/connection/reset', authRequired, (req, res) => {
+        try {
+            if (store.resetConnectionConfig) {
+                store.resetConnectionConfig();
+            }
+            res.json({ ok: true });
+        } catch (e) {
+            res.status(500).json({ ok: false, error: e.message });
+        }
+    });
+
+    // ============ 账号级别下线提醒配置 API ============
+    // 获取账号级别配置
+    app.get('/api/settings/account-offline-reminder', authRequired, (req, res) => {
+        const id = getAccId(req);
+        if (!id) return res.status(400).json({ ok: false, error: 'Missing x-account-id' });
+
+        // 检查权限
+        if (!checkAccountAccess(req, id)) {
+            return res.status(403).json({ ok: false, error: '无权访问此账号' });
+        }
+
+        try {
+            const cfg = store.getAccountOfflineReminder 
+                ? store.getAccountOfflineReminder(id)
+                : null;
+            res.json({ ok: true, data: cfg });
+        } catch (e) {
+            res.status(500).json({ ok: false, error: e.message });
+        }
+    });
+
+    // 保存账号级别配置
+    app.post('/api/settings/account-offline-reminder', authRequired, (req, res) => {
+        const id = getAccId(req);
+        if (!id) return res.status(400).json({ ok: false, error: 'Missing x-account-id' });
+
+        // 检查权限
+        if (!checkAccountAccess(req, id)) {
+            return res.status(403).json({ ok: false, error: '无权访问此账号' });
+        }
+
+        try {
+            const body = (req.body && typeof req.body === 'object') ? req.body : null;
+            const saved = store.setAccountOfflineReminder 
+                ? store.setAccountOfflineReminder(id, body)
+                : null;
+            res.json({ ok: true, data: saved });
+        } catch (e) {
+            res.status(500).json({ ok: false, error: e.message });
+        }
+    });
+
+    // 测试推送
+    app.post('/api/settings/account-offline-reminder/test', authRequired, async (req, res) => {
+        const id = getAccId(req);
+        if (!id) return res.status(400).json({ ok: false, error: 'Missing x-account-id' });
+
+        // 检查权限
+        if (!checkAccountAccess(req, id)) {
+            return res.status(403).json({ ok: false, error: '无权访问此账号' });
+        }
+
+        try {
+            const cfg = (req.body && typeof req.body === 'object') ? req.body : {};
+            
+            // 验证配置
+            if (!cfg.channel || !cfg.token || !cfg.title || !cfg.msg) {
+                return res.status(400).json({ ok: false, error: '配置不完整' });
+            }
+
+            // 获取账号信息
+            const accounts = store.getAccounts();
+            const accountList = Array.isArray(accounts.accounts) ? accounts.accounts : [];
+            const account = accountList.find(a => String(a.id) === String(id));
+            const accountName = account ? account.name : id;
+
+            // 构建测试通知
+            const title = `${cfg.title} [测试]`;
+            const content = `${cfg.msg}\n\n这是一条测试通知，来自账号: ${accountName}`;
+
+            // 发送通知
+            const result = await provider.sendPushooMessage({
+                channel: cfg.channel,
+                endpoint: cfg.endpoint || '',
+                token: cfg.token,
+                title,
+                content
+            });
+
+            if (result && result.ok) {
+                res.json({ ok: true, data: { success: true, message: '测试通知发送成功' } });
+            } else {
+                res.json({ ok: false, error: result && result.msg ? result.msg : '测试通知发送失败' });
+            }
         } catch (e) {
             res.status(500).json({ ok: false, error: e.message });
         }

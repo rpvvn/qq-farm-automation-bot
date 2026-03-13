@@ -1,0 +1,14 @@
+{
+  "cards": [
+    {
+      "code": "D7W05YQPD6XD4AFA",
+      "description": "月卡",
+      "days": 30,
+      "type": "time",
+      "enabled": true,
+      "usedBy": "vv",
+      "usedAt": 1773434857819,
+      "createdAt": 1773434843367
+    }
+  ]
+}

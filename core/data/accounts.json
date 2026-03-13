@@ -1,0 +1,45 @@
+{
+  "accounts": [
+    {
+      "id": "1",
+      "name": "3473400",
+      "code": "4f60598f522199ffc4be2e593df84744",
+      "platform": "qq",
+      "uin": "",
+      "qq": "",
+      "avatar": "",
+      "username": "admin",
+      "createdAt": 1773434603006,
+      "updatedAt": 1773434603618,
+      "nick": "Vullfin"
+    },
+    {
+      "id": "2",
+      "name": "171761515",
+      "code": "438f25c54ce7789f07ff54a419339331",
+      "platform": "qq",
+      "uin": "",
+      "qq": "",
+      "avatar": "",
+      "username": "admin",
+      "createdAt": 1773434659669,
+      "updatedAt": 1773434660240,
+      "nick": "ㅤㅤ"
+    },
+    {
+      "id": "3",
+      "name": "233",
+      "code": "466601a859ffbe7fd9155dc36032d286",
+      "platform": "qq",
+      "uin": "",
+      "qq": "",
+      "avatar": "",
+      "username": "vv",
+      "createdAt": 1773434896511,
+      "updatedAt": 1773435609979,
+      "nick": "h",
+      "loginType": "manual"
+    }
+  ],
+  "nextId": 4
+}
