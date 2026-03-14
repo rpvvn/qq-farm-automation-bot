@@ -560,3 +560,63 @@
 {"app":"qq-farm-bot","level":"info","message":"连接被拒绝，可能需要更新 Code","module":"system","tag":"系统","timestamp":"2026-03-13T21:24:42.433Z"}
 {"app":"qq-farm-bot","level":"warn","message":"[WS] 错误: Unexpected server response: 400","module":"system","tag":"系统","timestamp":"2026-03-13T21:24:42.438Z"}
 {"app":"qq-farm-bot","level":"info","message":"连接被拒绝，可能需要更新 Code","module":"system","tag":"系统","timestamp":"2026-03-13T21:24:42.439Z"}
+{"app":"qq-farm-bot","level":"info","message":"发现 3 个账号，正在启动...","module":"runtime","tag":"系统","timestamp":"2026-03-14T15:16:46.170Z"}
+{"accountId":"1","accountName":"3473400","app":"qq-farm-bot","level":"info","message":"正在启动账号: 3473400","module":"runtime","tag":"系统","timestamp":"2026-03-14T15:16:46.171Z"}
+{"accountId":"2","accountName":"171761515","app":"qq-farm-bot","level":"info","message":"正在启动账号: 171761515","module":"runtime","tag":"系统","timestamp":"2026-03-14T15:16:46.174Z"}
+{"accountId":"3","accountName":"233","app":"qq-farm-bot","level":"info","message":"正在启动账号: 233","module":"runtime","tag":"系统","timestamp":"2026-03-14T15:16:46.175Z"}
+{"app":"qq-farm-bot","level":"info","message":"admin panel started","module":"admin","port":3007,"timestamp":"2026-03-14T15:16:46.182Z","url":"http://localhost:3007"}
+{"app":"qq-farm-bot","level":"info","message":"正在加载 Protobuf 定义...","module":"system","tag":"系统","timestamp":"2026-03-14T15:16:46.491Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在加载 Protobuf 定义...","module":"system","tag":"系统","timestamp":"2026-03-14T15:16:46.492Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在加载 Protobuf 定义...","module":"system","tag":"系统","timestamp":"2026-03-14T15:16:46.492Z"}
+{"app":"qq-farm-bot","level":"info","message":"Protobuf 定义加载完成","module":"system","tag":"系统","timestamp":"2026-03-14T15:16:46.523Z"}
+{"app":"qq-farm-bot","level":"info","message":"Protobuf 定义加载完成","module":"system","tag":"系统","timestamp":"2026-03-14T15:16:46.525Z"}
+{"app":"qq-farm-bot","level":"info","message":"Protobuf 定义加载完成","module":"system","tag":"系统","timestamp":"2026-03-14T15:16:46.526Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在连接服务器...","module":"system","tag":"系统","timestamp":"2026-03-14T15:16:46.526Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在连接服务器...","module":"system","tag":"系统","timestamp":"2026-03-14T15:16:46.523Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在连接服务器...","module":"system","tag":"系统","timestamp":"2026-03-14T15:16:46.526Z"}
+{"app":"qq-farm-bot","level":"warn","message":"[WS] 错误: Unexpected server response: 400","module":"system","tag":"系统","timestamp":"2026-03-14T15:16:57.851Z"}
+{"app":"qq-farm-bot","level":"info","message":"连接被拒绝，可能需要更新 Code","module":"system","tag":"系统","timestamp":"2026-03-14T15:16:57.852Z"}
+{"app":"qq-farm-bot","level":"warn","message":"[WS] 错误: Unexpected server response: 400","module":"system","tag":"系统","timestamp":"2026-03-14T15:16:57.856Z"}
+{"app":"qq-farm-bot","level":"info","message":"连接被拒绝，可能需要更新 Code","module":"system","tag":"系统","timestamp":"2026-03-14T15:16:57.857Z"}
+{"app":"qq-farm-bot","level":"warn","message":"[WS] 错误: Unexpected server response: 400","module":"system","tag":"系统","timestamp":"2026-03-14T15:16:57.881Z"}
+{"app":"qq-farm-bot","level":"info","message":"连接被拒绝，可能需要更新 Code","module":"system","tag":"系统","timestamp":"2026-03-14T15:16:57.882Z"}
+{"accountId":"4","accountName":"账号4","app":"qq-farm-bot","level":"info","message":"正在启动账号: 账号4","module":"runtime","tag":"系统","timestamp":"2026-03-14T15:17:12.332Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在加载 Protobuf 定义...","module":"system","tag":"系统","timestamp":"2026-03-14T15:17:12.495Z"}
+{"app":"qq-farm-bot","level":"info","message":"Protobuf 定义加载完成","module":"system","tag":"系统","timestamp":"2026-03-14T15:17:12.518Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在连接服务器...","module":"system","tag":"系统","timestamp":"2026-03-14T15:17:12.518Z"}
+{"app":"qq-farm-bot","level":"warn","message":"[WS] 错误: Unexpected server response: 400","module":"system","tag":"系统","timestamp":"2026-03-14T15:17:12.759Z"}
+{"app":"qq-farm-bot","level":"info","message":"连接被拒绝，可能需要更新 Code","module":"system","tag":"系统","timestamp":"2026-03-14T15:17:12.759Z"}
+{"accountId":"4","accountName":"账号4","app":"qq-farm-bot","level":"info","message":"账号 账号4 进程退出 (code=0, signal=none)","module":"runtime","runtimeMode":"thread","tag":"系统","timestamp":"2026-03-14T15:17:20.375Z"}
+{"accountId":"5","accountName":"账号5","app":"qq-farm-bot","level":"info","message":"正在启动账号: 账号5","module":"runtime","tag":"系统","timestamp":"2026-03-14T15:17:25.928Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在加载 Protobuf 定义...","module":"system","tag":"系统","timestamp":"2026-03-14T15:17:26.096Z"}
+{"app":"qq-farm-bot","level":"info","message":"Protobuf 定义加载完成","module":"system","tag":"系统","timestamp":"2026-03-14T15:17:26.122Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在连接服务器...","module":"system","tag":"系统","timestamp":"2026-03-14T15:17:26.122Z"}
+{"app":"qq-farm-bot","level":"warn","message":"[WS] 错误: Unexpected server response: 400","module":"system","tag":"系统","timestamp":"2026-03-14T15:17:26.421Z"}
+{"app":"qq-farm-bot","level":"info","message":"连接被拒绝，可能需要更新 Code","module":"system","tag":"系统","timestamp":"2026-03-14T15:17:26.421Z"}
+{"accountId":"5","accountName":"账号5","app":"qq-farm-bot","level":"info","message":"账号 账号5 进程退出 (code=0, signal=none)","module":"runtime","runtimeMode":"thread","tag":"系统","timestamp":"2026-03-14T15:18:30.302Z"}
+{"accountId":"5","accountName":"账号5","app":"qq-farm-bot","level":"info","message":"正在启动账号: 账号5","module":"runtime","tag":"系统","timestamp":"2026-03-14T15:18:30.303Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在加载 Protobuf 定义...","module":"system","tag":"系统","timestamp":"2026-03-14T15:18:30.507Z"}
+{"app":"qq-farm-bot","level":"info","message":"Protobuf 定义加载完成","module":"system","tag":"系统","timestamp":"2026-03-14T15:18:30.531Z"}
+{"app":"qq-farm-bot","level":"info","message":"正在连接服务器...","module":"system","tag":"系统","timestamp":"2026-03-14T15:18:30.531Z"}
+{"app":"qq-farm-bot","level":"info","message":"登录成功: ㅤㅤ (Lv5)","module":"system","tag":"系统","timestamp":"2026-03-14T15:18:30.831Z"}
+{"accountId":"5","accountName":"账号5","app":"qq-farm-bot","level":"info","message":"已同步账号昵称: None -> ㅤㅤ","module":"runtime","tag":"系统","timestamp":"2026-03-14T15:18:30.884Z"}
+{"app":"qq-farm-bot","event":"email_rewards","level":"info","message":"今日暂无可领取邮箱奖励","module":"task","result":"none","tag":"任务","timestamp":"2026-03-14T15:18:30.922Z"}
+{"app":"qq-farm-bot","event":"daily_share","level":"info","message":"今日分享奖励已领取","module":"task","result":"none","tag":"任务","timestamp":"2026-03-14T15:18:31.023Z"}
+{"app":"qq-farm-bot","event":"month_card_gift","level":"info","message":"今日暂无可领取月卡礼包","module":"task","result":"none","tag":"任务","timestamp":"2026-03-14T15:18:31.057Z"}
+{"app":"qq-farm-bot","event":"mall_free_gifts","level":"info","message":"本次未成功领取免费礼包","module":"task","result":"none","tag":"任务","timestamp":"2026-03-14T15:18:31.124Z"}
+{"app":"qq-farm-bot","event":"vip_daily_gift","level":"info","message":"今日暂无可领取会员礼包","module":"task","result":"none","tag":"任务","timestamp":"2026-03-14T15:18:31.159Z"}
+{"app":"qq-farm-bot","count":2,"event":"收获作物","landIds":[5,7],"level":"info","message":"收获完成 2 块土地","module":"farm","result":"ok","tag":"农场","timestamp":"2026-03-14T15:18:39.963Z"}
+{"app":"qq-farm-bot","count":2,"event":"铲除植物","level":"info","message":"已铲除 2 块 (5,7)","module":"farm","result":"ok","tag":"农场","timestamp":"2026-03-14T15:18:39.997Z"}
+{"app":"qq-farm-bot","event":"选择种子","level":"info","message":"最佳种子: 白萝卜 (20002) 价格=2金币 生长1分钟","module":"warehouse","price":2,"seedId":20002,"tag":"仓库","timestamp":"2026-03-14T15:18:40.035Z"}
+{"app":"qq-farm-bot","cost":4,"count":2,"event":"购买种子","level":"info","message":"已购买 白萝卜种子 x2, 花费 4 金币","module":"warehouse","result":"ok","seedId":20002,"tag":"仓库","timestamp":"2026-03-14T15:18:40.069Z"}
+{"app":"qq-farm-bot","count":2,"event":"种植种子","level":"info","message":"已在 2 块地种植 (5,7)","module":"farm","occupiedCount":2,"result":"ok","seedId":20002,"tag":"农场","timestamp":"2026-03-14T15:18:40.256Z"}
+{"app":"qq-farm-bot","count":2,"event":"fertilize","landTypes":["gold","black","red","normal"],"level":"info","message":"常规施肥：已为 2/2 块地施普通化肥（范围: 金土地、黑土地、红土地、普通土地）","module":"farm","reason":"normal","result":"ok","tag":"农场","timestamp":"2026-03-14T15:18:40.475Z","type":"normal"}
+{"app":"qq-farm-bot","count":7,"event":"施肥","level":"info","message":"有机化肥循环施肥完成，共施 7 次","module":"farm","result":"ok","tag":"农场","timestamp":"2026-03-14T15:18:47.827Z","type":"organic"}
+{"actions":["收获2","种植2"],"app":"qq-farm-bot","event":"农场循环","level":"info","message":"[收:2 长:5] → 收获2/种植2","module":"farm","opType":"all","tag":"农场","timestamp":"2026-03-14T15:18:47.894Z"}
+{"app":"qq-farm-bot","count":7,"event":"收获作物","landIds":[1,2,3,4,5,6,7],"level":"info","message":"收获完成 7 块土地","module":"farm","result":"ok","tag":"农场","timestamp":"2026-03-14T15:18:53.071Z"}
+{"app":"qq-farm-bot","count":7,"event":"铲除植物","level":"info","message":"已铲除 7 块 (1,2,3,4,5,6,7)","module":"farm","result":"ok","tag":"农场","timestamp":"2026-03-14T15:18:53.104Z"}
+{"app":"qq-farm-bot","event":"选择种子","level":"info","message":"最佳种子: 水稻 (20060) 价格=84金币 生长40分钟","module":"warehouse","price":84,"seedId":20060,"tag":"仓库","timestamp":"2026-03-14T15:18:53.138Z"}
+{"app":"qq-farm-bot","cost":588,"count":7,"event":"购买种子","level":"info","message":"已购买 水稻种子 x7, 花费 588 金币","module":"warehouse","result":"ok","seedId":20060,"tag":"仓库","timestamp":"2026-03-14T15:18:53.171Z"}
+{"app":"qq-farm-bot","count":7,"event":"种植种子","level":"info","message":"已在 7 块地种植 (1,2,3,4,5,6,7)","module":"farm","occupiedCount":7,"result":"ok","seedId":20060,"tag":"农场","timestamp":"2026-03-14T15:18:53.813Z"}
+{"app":"qq-farm-bot","count":7,"event":"fertilize","landTypes":["gold","black","red","normal"],"level":"info","message":"常规施肥：已为 7/7 块地施普通化肥（范围: 金土地、黑土地、红土地、普通土地）","module":"farm","reason":"normal","result":"ok","tag":"农场","timestamp":"2026-03-14T15:18:54.501Z","type":"normal"}
+{"actions":["收获7","种植7"],"app":"qq-farm-bot","event":"农场循环","level":"info","message":"[收:7 长:0] → 收获7/种植7","module":"farm","opType":"all","tag":"农场","timestamp":"2026-03-14T15:18:54.599Z"}

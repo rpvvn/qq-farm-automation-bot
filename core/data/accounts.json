@@ -39,7 +39,21 @@
       "updatedAt": 1773435609979,
       "nick": "h",
       "loginType": "manual"
+    },
+    {
+      "id": "5",
+      "name": "账号5",
+      "code": "0e3KKwGa1c8UkL0pWHHa1zUYoz0KKwGH",
+      "platform": "wx",
+      "uin": "",
+      "qq": "",
+      "avatar": "",
+      "username": "admin",
+      "createdAt": 1773501445924,
+      "updatedAt": 1773501510882,
+      "loginType": "manual",
+      "nick": "ㅤㅤ"
     }
   ],
-  "nextId": 4
+  "nextId": 6
 }

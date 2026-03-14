@@ -549,7 +549,7 @@ async function startBot(config) {
         syncStatus();
     };
 
-    connect(code, onLoginSuccess);
+    connect(code, onLoginSuccess, platform);
 
     // 启动定时状态同步
     workerScheduler.setIntervalTask('status_sync', 3000, syncStatus, { preventOverlap: true });

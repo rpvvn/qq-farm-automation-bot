@@ -560,12 +560,17 @@ function startHeartbeat() {
 // ============ WebSocket 连接 ============
 let savedLoginCallback = null;
 let savedCode = null;
+let savedPlatform = null; // 保存账号的 platform 信息
 
-function connect(code, onLoginSuccess) {
+function connect(code, onLoginSuccess, platform = null) {
     savedLoginCallback = onLoginSuccess;
     if (code) savedCode = code;
+    if (platform) savedPlatform = platform;
+    
     const connConfig = getEffectiveConnectionConfig();
-    const url = `${connConfig.serverUrl}?platform=${connConfig.platform}&os=${connConfig.os}&ver=${connConfig.clientVersion}&code=${savedCode}&openID=`;
+    // 优先使用账号的 platform，否则使用配置的 platform
+    const effectivePlatform = savedPlatform || connConfig.platform;
+    const url = `${connConfig.serverUrl}?platform=${effectivePlatform}&os=${connConfig.os}&ver=${connConfig.clientVersion}&code=${savedCode}&openID=`;
 
     ws = new WebSocket(url, {
         headers: {
@@ -624,7 +629,7 @@ function reconnect(newCode) {
         ws = null;
     }
     userState.gid = 0;
-    connect(newCode || savedCode, savedLoginCallback);
+    connect(newCode || savedCode, savedLoginCallback, savedPlatform);
 }
 
 function getWs() { return ws; }
