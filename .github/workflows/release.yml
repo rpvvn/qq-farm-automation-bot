@@ -1,0 +1,212 @@
+name: release
+
+# 触发条件：PR 合并到 main 分支自动发版 + 手动触发
+on:
+  # 自动触发：PR 合并到 main 分支时自动发版
+  push:
+    branches:
+      - main
+  # 手动触发（保留原有能力，可自定义版本号）
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version (e.g., 1.2.3 or patch/minor/major)'
+        required: false
+        default: 'patch'
+      latest:
+        description: 'Latest'
+        required: false
+        default: 'true'
+      prerelease:
+        description: 'Prerelease'
+        required: false
+        default: 'false'
+
+jobs:
+  version:
+    runs-on: ubuntu-latest
+    outputs:
+      new_version: ${{ steps.bump.outputs.new_version }}
+      new_tag: ${{ steps.bump.outputs.new_tag }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get Latest Tag
+        id: get_tag
+        run: |
+          LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
+          echo "latest_tag=$LATEST_TAG" >> $GITHUB_OUTPUT
+          echo "当前最新版本: $LATEST_TAG"
+
+      - name: Bump Version
+        id: bump
+        run: |
+          LATEST_TAG="${{ steps.get_tag.outputs.latest_tag }}"
+          VERSION_INPUT="${{ github.event.inputs.version }}"
+          
+          CURRENT_VERSION=${LATEST_TAG#v}
+          
+          if [[ "$VERSION_INPUT" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            NEW_VERSION="$VERSION_INPUT"
+          else
+            BUMP_TYPE="${VERSION_INPUT:-patch}"
+            IFS='.' read -r MAJOR MINOR PATCH <<< "$CURRENT_VERSION"
+            
+            case "$BUMP_TYPE" in
+              major)
+                MAJOR=$((MAJOR + 1))
+                MINOR=0
+                PATCH=0
+                ;;
+              minor)
+                MINOR=$((MINOR + 1))
+                PATCH=0
+                ;;
+              patch|*)
+                PATCH=$((PATCH + 1))
+                ;;
+            esac
+            
+            NEW_VERSION="$MAJOR.$MINOR.$PATCH"
+          fi
+          
+          NEW_TAG="v$NEW_VERSION"
+          echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
+          echo "new_tag=$NEW_TAG" >> $GITHUB_OUTPUT
+          echo "新版本号: $NEW_TAG"
+
+      - name: Create and Push Tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # 检查 tag 是否已存在
+          if git rev-parse "${{ steps.bump.outputs.new_tag }}" >/dev/null 2>&1; then
+            echo "Tag ${{ steps.bump.outputs.new_tag }} 已存在，跳过创建"
+          else
+            git tag ${{ steps.bump.outputs.new_tag }}
+            git push origin ${{ steps.bump.outputs.new_tag }}
+            echo "Tag ${{ steps.bump.outputs.new_tag }} 创建成功"
+          fi
+
+  build:
+    runs-on: ubuntu-latest
+    needs: version
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm package:release
+
+      - name: List Artifacts
+        run: ls -R core/dist
+
+      - name: Upload Windows
+        uses: actions/upload-artifact@v4
+        with:
+          name: farm-win-x64
+          path: ./core/dist/qq-farm-bot-win-x64.exe
+          if-no-files-found: error
+
+      - name: Upload Linux
+        uses: actions/upload-artifact@v4
+        with:
+          name: farm-linux-x64
+          path: ./core/dist/qq-farm-bot-linux-x64
+          if-no-files-found: error
+
+      - name: Upload MacOS Intel
+        uses: actions/upload-artifact@v4
+        with:
+          name: farm-mac-x64
+          path: ./core/dist/qq-farm-bot-macos-x64
+          if-no-files-found: error
+
+      - name: Upload MacOS Apple Silicon
+        uses: actions/upload-artifact@v4
+        with:
+          name: farm-mac-arm64
+          path: ./core/dist/qq-farm-bot-macos-arm64
+          if-no-files-found: error
+
+  release:
+    runs-on: ubuntu-latest
+    needs: [version, build]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - uses: actions/download-artifact@v4
+
+      - name: Display structure of downloaded files
+        run: ls -R .
+
+      - name: Extract Latest Changelog
+        id: changelog
+        run: |
+          if [ -f "Update.log" ]; then
+            # 提取第一段更新日志（从第一个 ## 更新日志 到第二个 ## 更新日志 之间的内容）
+            CHANGELOG=$(awk '
+              /^## 更新日志/ {
+                if (found == 0) {
+                  found = 1
+                  next
+                } else {
+                  exit
+                }
+              }
+              found == 1 { print }
+            ' Update.log | sed '/^[[:space:]]*$/d')
+            
+            if [ -z "$CHANGELOG" ]; then
+              CHANGELOG="自动构建发布"
+            fi
+            
+            echo "content<<EOF" >> $GITHUB_OUTPUT
+            echo "$CHANGELOG" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+          else
+            echo "content=Update.log 文件不存在" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Release
+        uses: ncipollo/release-action@v1
+        with:
+          name: ${{ needs.version.outputs.new_tag }}
+          tag: ${{ needs.version.outputs.new_tag }}
+          body: |
+            ## ${{ needs.version.outputs.new_tag }}
+            
+            ${{ steps.changelog.outputs.content }}
+            
+            ---
+            **多平台产物：**
+            - Windows x64
+            - Linux x64
+            - MacOS Intel (x64)
+            - MacOS Apple Silicon (arm64)
+          token: ${{ secrets.GITHUB_TOKEN }}
+          makeLatest: ${{ github.event.inputs.latest || 'true' }}
+          prerelease: ${{ github.event.inputs.prerelease || 'false' }}
+          allowUpdates: true
+          artifacts: >
+            farm-win-x64/qq-farm-bot-win-x64.exe,
+            farm-linux-x64/qq-farm-bot-linux-x64,
+            farm-mac-x64/qq-farm-bot-macos-x64,
+            farm-mac-arm64/qq-farm-bot-macos-arm64
